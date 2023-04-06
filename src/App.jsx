@@ -143,21 +143,49 @@ const App = () => {
   const [showScoreboard, setShowScoreboard] = useState(false);
   const [showTwitterBtn, setShowTwitterBtn] = useState(false);
   const [scores, setScores] = useState([]);
+  const [highestScore, setHighestScore] = useState(() => {
+    const savedHighestScore =
+      parseInt(localStorage.getItem("highestScore")) || 0;
+    return savedHighestScore;
+  });
 
   useEffect(() => {
     const savedScores = JSON.parse(localStorage.getItem("scores")) || [];
+    const savedHighestScore = parseInt(localStorage.getItem("highestScore")) || 0;
     setScores(savedScores);
+    setHighestScore(savedHighestScore);
   }, []);
 
   useEffect(() => {
     localStorage.setItem("scores", JSON.stringify(scores));
-  }, [scores]);
+    localStorage.setItem("highestScore", highestScore);
+  }, [scores, highestScore]);
+
+  useEffect(() => {
+    if (showResult && score > 0) {
+      if (!scores.includes(score)) {
+        setScores((prevScores) => [...prevScores, score].sort((a, b) => b - a));
+      }
+      if (score > highestScore) {
+        setHighestScore(score);
+      }
+    }
+  }, [showResult, score, scores]);
 
   const handleAnswer = (answer) => {
     const currentPersonality = personality;
     const isCorrect = answer === currentPersonality.buriedAtPereLachaise;
     setIsCorrect(isCorrect);
-    setScore(score + (isCorrect ? 1 : 0));
+
+    if (isCorrect) {
+      const newScore = score + 1;
+      setScore(newScore);
+
+      if (newScore > highestScore) {
+        setHighestScore(newScore);
+      }
+    }
+
     setShowResult(true);
     setShowScoreboard(false);
   };
@@ -203,7 +231,7 @@ const App = () => {
 
   const handleScoreboardClick = () => {
     setShowScoreboard((prevShowScoreboard) => !prevShowScoreboard);
-    setShowTwitterBtn((prevShowTwitter) => !prevShowTwitter)
+    setShowTwitterBtn((prevShowTwitter) => !prevShowTwitter);
   };
 
   useEffect(() => {
@@ -218,7 +246,7 @@ const App = () => {
       {!showResult ? (
         <QuestionContainer>
           <QuestionText>
-            {personality ? personality.name : "Click 'Start' to start"}
+            {personality ? personality.name : "Click 'Start' pour commencer"}
           </QuestionText>
           <DescriptionText>{personality.description}</DescriptionText>
           <AnswerContainer>
@@ -231,9 +259,7 @@ const App = () => {
           <ResultText>
             {isCorrect
               ? "Bien vu"
-              : `Eh bien ${
-                  personality.buriedAtPereLachaise ? "oui" : "non"
-                }`}
+              : `Eh bien ${personality.buriedAtPereLachaise ? "oui" : "non"}`}
           </ResultText>
           <ResultText>
             {score} / {personalities.length}
@@ -248,7 +274,7 @@ const App = () => {
       )}
       {showScoreboard && (
         <Ladderboard
-          scores={scores}
+          highestScore={highestScore}
           handleClose={() => setShowScoreboard(false)}
         />
       )}

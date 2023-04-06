@@ -14,32 +14,22 @@ const LadderboardTitle = styled.h2`
   text-align: center;
 `;
 
-const LadderboardList = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
-`;
-
 const LadderboardItem = styled.li`
   font-size: 18px;
   margin-top: 10px;
 `;
 
-const Ladderboard = ({ scores }) => {
+const Ladderboard = ({ highestScore }) => {
 
   return (
     <LadderboardContainer>
-      <LadderboardTitle>Top Scores</LadderboardTitle>
-      {scores.length > 0 ? (
-        <LadderboardList>
-          {scores.map((score, index) => (
-            <LadderboardItem key={index}>
-              {index + 1}. {score}
-            </LadderboardItem>
-          ))}
-        </LadderboardList>
+      <LadderboardTitle>Ton prime</LadderboardTitle>
+      {highestScore > 0 ? (
+        <LadderboardItem>
+          1. {highestScore}
+        </LadderboardItem>
       ) : (
-        <p>No scores yet.</p>
+        <p>Pas de score, pas de chocolat.</p>
       )}
     </LadderboardContainer>
   );
