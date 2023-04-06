@@ -50,6 +50,7 @@ const ResultText = styled.p`
 `;
 
 const DescriptionText = styled.p`
+  width: 40%;
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
@@ -114,13 +115,11 @@ const App = () => {
           <QuestionText>
             {personality ? personality.name : "Click 'Start' to start"}
           </QuestionText>
+          <DescriptionText>{personality.description}</DescriptionText>
           <AnswerContainer>
             <AnswerButton onClick={() => handleAnswer(true)}>Yes</AnswerButton>
             <AnswerButton onClick={() => handleAnswer(false)}>No</AnswerButton>
           </AnswerContainer>
-          {hasAnswered && (
-            <DescriptionText>{personality.description}</DescriptionText>
-          )}
         </QuestionContainer>
       ) : (
         <QuestionContainer>
@@ -128,14 +127,14 @@ const App = () => {
           {!isCorrect && (
             <ResultText>
               The correct answer was{" "}
-              {personality.buriedAtPereLachaise ? "Yes" : "No"}
+              {personality.buriedAtPereLachaise ? "oui" : "non"}
             </ResultText>
           )}
           <AnswerContainer>
             <AnswerButton onClick={handleNextQuestion}>
               {score === personalities.length - 1
-                ? "See Score"
-                : "Next Question"}
+                ? "Voir score"
+                : "Prochaine question"}
             </AnswerButton>
           </AnswerContainer>
         </QuestionContainer>
