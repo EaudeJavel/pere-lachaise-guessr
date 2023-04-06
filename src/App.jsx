@@ -41,6 +41,12 @@ const AnswerContainer = styled.div`
   margin-top: 20px;
 `;
 
+const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+`;
+
 const AnswerButton = styled.button`
   font-size: 18px;
   font-weight: bold;
@@ -99,12 +105,12 @@ const DescriptionText = styled.p`
 const ResetButton = styled.button`
   font-size: 18px;
   font-weight: bold;
-  background-color: #FF5722;
+  background-color: #ff5722;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  margin-top: 50px;
+  margin-left: 50px;
   cursor: pointer;
   &:hover {
     opacity: 0.8;
@@ -135,6 +141,7 @@ const App = () => {
   const [showResult, setShowResult] = useState(false);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [showScoreboard, setShowScoreboard] = useState(false);
+  const [showTwitterBtn, setShowTwitterBtn] = useState(false);
   const [scores, setScores] = useState([]);
 
   useEffect(() => {
@@ -180,6 +187,7 @@ const App = () => {
     setShowResult(false);
     setIsCorrect(false);
     setShowScoreboard(false);
+    setShowTwitterBtn(false);
   };
 
   const handleReset = () => {
@@ -190,10 +198,12 @@ const App = () => {
     setIsCorrect(false);
     setShowResult(false);
     setShowScoreboard(false);
+    setShowTwitterBtn(false);
   };
 
   const handleScoreboardClick = () => {
     setShowScoreboard((prevShowScoreboard) => !prevShowScoreboard);
+    setShowTwitterBtn((prevShowTwitter) => !prevShowTwitter)
   };
 
   useEffect(() => {
@@ -212,46 +222,42 @@ const App = () => {
           </QuestionText>
           <DescriptionText>{personality.description}</DescriptionText>
           <AnswerContainer>
-            <AnswerButton onClick={() => handleAnswer(true)}>Yes</AnswerButton>
-            <AnswerButton onClick={() => handleAnswer(false)}>No</AnswerButton>
+            <AnswerButton onClick={() => handleAnswer(true)}>Oui</AnswerButton>
+            <AnswerButton onClick={() => handleAnswer(false)}>Non</AnswerButton>
           </AnswerContainer>
         </QuestionContainer>
       ) : (
         <QuestionContainer>
-          <ResultText>{isCorrect ? "Correct!" : "Incorrect!"}</ResultText>
-          {!isCorrect && (
-            <ResultText>
-              The correct answer was{" "}
-              {personality.buriedAtPereLachaise ? "oui" : "non"}
-            </ResultText>
-          )}
-          <AnswerContainer>
+          <ResultText>
+            {isCorrect
+              ? "Bien vu"
+              : `Eh bien ${
+                  personality.buriedAtPereLachaise ? "oui" : "non"
+                }`}
+          </ResultText>
+          <ResultText>
+            {score} / {personalities.length}
+          </ResultText>
+          <ButtonsContainer>
             <AnswerButton onClick={handleNextQuestion}>
               Prochaine question
             </AnswerButton>
-          </AnswerContainer>
-          <ResetButton onClick={handleReset}>Reset</ResetButton>
+            <ResetButton onClick={handleReset}>Reset</ResetButton>
+          </ButtonsContainer>
         </QuestionContainer>
-      )}
-      {showResult && (
-        <>
-          <ResultText>
-            Your Score: {score} / {personalities.length}
-          </ResultText>
-        </>
       )}
       {showScoreboard && (
         <Ladderboard
           scores={scores}
           handleClose={() => setShowScoreboard(false)}
         />
-    )}
+      )}
       {showResult && (
-         <>
+        <>
           <ScoreboardButton onClick={handleScoreboardClick}>
             Voir tableau de scores
           </ScoreboardButton>
-          <TweetButton score={score} />
+          {showTwitterBtn && <TweetButton score={score} />}
         </>
       )}
     </AppContainer>
