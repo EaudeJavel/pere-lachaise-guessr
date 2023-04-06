@@ -4,9 +4,12 @@ import personalities from "./personalities.json";
 
 const AppContainer = styled.div`
   display: flex;
+  height: 100vh;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
+  justify-content: center;
 `;
 
 const Heading = styled.div`
@@ -45,11 +48,37 @@ const AnswerButton = styled.button`
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  &:hover {
-    opacity: 0.8;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-out, height 0.3s ease-out;
+  }
+
+  &:hover:before {
+    width: 100px;
+    height: 100px;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:active:before {
+    width: 50px;
+    height: 50px;
+    transition: width 0.1s ease-out, height 0.1s ease-out;
   }
 `;
-
 const ResultText = styled.p`
   font-size: 24px;
   font-weight: bold;
@@ -57,9 +86,10 @@ const ResultText = styled.p`
 `;
 
 const DescriptionText = styled.p`
-  width: 40%;
+  width: 60%;
   font-size: 16px;
   margin-top: 10px;
+  margin-bottom: 20px;
   text-align: center;
 `;
 
@@ -85,6 +115,7 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [isCorrect, setIsCorrect] = useState(false);
   const [showResult, setShowResult] = useState(false);
+  const [isFullScreen, setIsFullScreen] = useState(false);
 
   const handleAnswer = (answer) => {
     const currentPersonality = personality;
@@ -92,6 +123,24 @@ const App = () => {
     setIsCorrect(isCorrect);
     setScore(score + isCorrect);
     setShowResult(true);
+  };
+
+  const toggleFullScreen = () => {
+    if (!isFullScreen) {
+      document.documentElement.requestFullscreen();
+      setIsFullScreen(true);
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+      setIsFullScreen(false);
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "f") {
+      toggleFullScreen();
+    }
   };
 
   const handleNextQuestion = () => {
@@ -114,7 +163,7 @@ const App = () => {
   };
 
   return (
-    <AppContainer>
+    <AppContainer onKeyDown={handleKeyDown} tabIndex={0}>
       <Heading>Pere Lachaise Guessr</Heading>
       {!showResult ? (
         <QuestionContainer>
