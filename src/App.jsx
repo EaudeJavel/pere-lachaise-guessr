@@ -5,7 +5,6 @@ import personalities from "./personalities.json";
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 `;
 
@@ -50,6 +49,12 @@ const ResultText = styled.p`
   text-align: center;
 `;
 
+const DescriptionText = styled.p`
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+`;
+
 const ResetButton = styled.button`
   font-size: 18px;
   font-weight: bold;
@@ -66,10 +71,13 @@ const ResetButton = styled.button`
 `;
 
 const App = () => {
-  const [personality, setPersonality] = useState(personalities[Math.floor(Math.random() * personalities.length)]);
+  const [personality, setPersonality] = useState(
+    personalities[Math.floor(Math.random() * personalities.length)]
+  );
   const [score, setScore] = useState(0);
   const [isCorrect, setIsCorrect] = useState(false);
   const [showResult, setShowResult] = useState(false);
+  const [hasAnswered, setHasAnswered] = useState(false);
 
   const handleAnswer = (answer) => {
     const currentPersonality = personality;
@@ -77,6 +85,7 @@ const App = () => {
     setIsCorrect(isCorrect);
     setScore(score + isCorrect);
     setShowResult(true);
+    setHasAnswered(true);
   };
 
   const handleNextQuestion = () => {
@@ -85,6 +94,7 @@ const App = () => {
     setPersonality(nextPersonality);
     setShowResult(false);
     setIsCorrect(false);
+    setHasAnswered(false);
   };
 
   const handleReset = () => {
@@ -94,17 +104,23 @@ const App = () => {
     setScore(0);
     setIsCorrect(false);
     setShowResult(false);
+    setHasAnswered(false);
   };
 
   return (
     <AppContainer>
       {!showResult ? (
         <QuestionContainer>
-          <QuestionText>{personality ? personality.name : "Click 'Start' to start"}</QuestionText>
+          <QuestionText>
+            {personality ? personality.name : "Click 'Start' to start"}
+          </QuestionText>
           <AnswerContainer>
             <AnswerButton onClick={() => handleAnswer(true)}>Yes</AnswerButton>
             <AnswerButton onClick={() => handleAnswer(false)}>No</AnswerButton>
           </AnswerContainer>
+          {hasAnswered && (
+            <DescriptionText>{personality.description}</DescriptionText>
+          )}
         </QuestionContainer>
       ) : (
         <QuestionContainer>
