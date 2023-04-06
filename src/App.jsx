@@ -85,7 +85,6 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [isCorrect, setIsCorrect] = useState(false);
   const [showResult, setShowResult] = useState(false);
-  const [hasAnswered, setHasAnswered] = useState(false);
 
   const handleAnswer = (answer) => {
     const currentPersonality = personality;
@@ -93,7 +92,6 @@ const App = () => {
     setIsCorrect(isCorrect);
     setScore(score + isCorrect);
     setShowResult(true);
-    setHasAnswered(true);
   };
 
   const handleNextQuestion = () => {
