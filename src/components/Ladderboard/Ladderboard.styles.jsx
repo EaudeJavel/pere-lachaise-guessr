@@ -16,4 +16,5 @@ export const LadderboardTitle = styled.h2`
 export const LadderboardItem = styled.li`
   font-size: 18px;
   margin-top: 10px;
+  list-style: none;
 `;

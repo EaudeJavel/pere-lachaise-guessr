@@ -13,7 +13,7 @@ const ResultContainer = ({ isCorrect, personality, score, personalitiesLength, h
       <ResultText>
         {isCorrect
           ? "Bien vu"
-          : `Eh bien ${personality.buriedAtPereLachaise ? "oui" : "non"}`}
+          : `Eh bien ${personality.buriedAtPereLachaise ? "si" : "non"}`}
       </ResultText>
       <ResultText>
         {score} / {personalitiesLength}

@@ -8,7 +8,7 @@ const Ladderboard = ({ highestScore }) => {
       <LadderboardTitle>Ton prime</LadderboardTitle>
       {highestScore > 0 ? (
         <LadderboardItem>
-          1. {highestScore}
+          {highestScore}
         </LadderboardItem>
       ) : (
         <p>Pas de score, pas de chocolat.</p>
