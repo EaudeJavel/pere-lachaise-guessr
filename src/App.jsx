@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import personalities from "./personalities.json";
+import Ladderboard from "./Ladderboard";
 import TweetButton from "./TweetButton";
 
 const AppContainer = styled.div`
@@ -110,6 +111,21 @@ const ResetButton = styled.button`
   }
 `;
 
+const ScoreboardButton = styled.button`
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 50px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
 const App = () => {
   const [personality, setPersonality] = useState(
     personalities[Math.floor(Math.random() * personalities.length)]
@@ -118,13 +134,25 @@ const App = () => {
   const [isCorrect, setIsCorrect] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [isFullScreen, setIsFullScreen] = useState(false);
+  const [showScoreboard, setShowScoreboard] = useState(false);
+  const [scores, setScores] = useState([]);
+
+  useEffect(() => {
+    const savedScores = JSON.parse(localStorage.getItem("scores")) || [];
+    setScores(savedScores);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("scores", JSON.stringify(scores));
+  }, [scores]);
 
   const handleAnswer = (answer) => {
     const currentPersonality = personality;
     const isCorrect = answer === currentPersonality.buriedAtPereLachaise;
     setIsCorrect(isCorrect);
-    setScore(score + isCorrect);
+    setScore(score + (isCorrect ? 1 : 0));
     setShowResult(true);
+    setShowScoreboard(false);
   };
 
   const toggleFullScreen = () => {
@@ -151,7 +179,7 @@ const App = () => {
     setPersonality(nextPersonality);
     setShowResult(false);
     setIsCorrect(false);
-    setHasAnswered(false);
+    setShowScoreboard(false);
   };
 
   const handleReset = () => {
@@ -161,8 +189,18 @@ const App = () => {
     setScore(0);
     setIsCorrect(false);
     setShowResult(false);
-    setHasAnswered(false);
+    setShowScoreboard(false);
   };
+
+  const handleScoreboardClick = () => {
+    setShowScoreboard((prevShowScoreboard) => !prevShowScoreboard);
+  };
+
+  useEffect(() => {
+    if (showResult && score > 0 && !scores.includes(score)) {
+      setScores((prevScores) => [...prevScores, score].sort((a, b) => b - a));
+    }
+  }, [showResult, score, scores]);
 
   return (
     <AppContainer onKeyDown={handleKeyDown} tabIndex={0}>
@@ -188,24 +226,34 @@ const App = () => {
             </ResultText>
           )}
           <AnswerContainer>
-            {/* <AnswerButton onClick={handleNextQuestion}>
-              {score === personalities.length - 1
-                ? "Voir score"
-                : "Prochaine question"}
-            </AnswerButton> */}
             <AnswerButton onClick={handleNextQuestion}>
               Prochaine question
             </AnswerButton>
           </AnswerContainer>
+          <ResetButton onClick={handleReset}>Reset</ResetButton>
         </QuestionContainer>
       )}
       {showResult && (
-        <ResultText>
-          Your Score: {score} / {personalities.length}
-        </ResultText>
+        <>
+          <ResultText>
+            Your Score: {score} / {personalities.length}
+          </ResultText>
+        </>
       )}
-      {showResult && <TweetButton score={score} />}
-      {showResult && <ResetButton onClick={handleReset}>Reset</ResetButton>}
+      {showScoreboard && (
+        <Ladderboard
+          scores={scores}
+          handleClose={() => setShowScoreboard(false)}
+        />
+    )}
+      {showResult && (
+         <>
+          <ScoreboardButton onClick={handleScoreboardClick}>
+            Voir tableau de scores
+          </ScoreboardButton>
+          <TweetButton score={score} />
+        </>
+      )}
     </AppContainer>
   );
 };
