@@ -6,6 +6,13 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Press Start 2P', cursive;
+`;
+
+const Heading = styled.div`
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
 `;
 
 const QuestionContainer = styled.div`
@@ -110,6 +117,7 @@ const App = () => {
 
   return (
     <AppContainer>
+      <Heading>Pere Lachaise Guessr</Heading>
       {!showResult ? (
         <QuestionContainer>
           <QuestionText>
@@ -131,10 +139,13 @@ const App = () => {
             </ResultText>
           )}
           <AnswerContainer>
-            <AnswerButton onClick={handleNextQuestion}>
+            {/* <AnswerButton onClick={handleNextQuestion}>
               {score === personalities.length - 1
                 ? "Voir score"
                 : "Prochaine question"}
+            </AnswerButton> */}
+            <AnswerButton onClick={handleNextQuestion}>
+              Prochaine question
             </AnswerButton>
           </AnswerContainer>
         </QuestionContainer>
