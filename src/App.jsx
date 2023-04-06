@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import personalities from "./personalities.json";
+import TweetButton from "./TweetButton";
 
 const AppContainer = styled.div`
   display: flex;
@@ -79,6 +80,7 @@ const AnswerButton = styled.button`
     transition: width 0.1s ease-out, height 0.1s ease-out;
   }
 `;
+
 const ResultText = styled.p`
   font-size: 24px;
   font-weight: bold;
@@ -96,7 +98,7 @@ const DescriptionText = styled.p`
 const ResetButton = styled.button`
   font-size: 18px;
   font-weight: bold;
-  background-color: #2196f3;
+  background-color: #FF5722;
   color: white;
   border: none;
   border-radius: 5px;
@@ -202,6 +204,7 @@ const App = () => {
           Your Score: {score} / {personalities.length}
         </ResultText>
       )}
+      {showResult && <TweetButton score={score} />}
       {showResult && <ResetButton onClick={handleReset}>Reset</ResetButton>}
     </AppContainer>
   );
