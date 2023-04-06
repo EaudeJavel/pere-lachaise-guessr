@@ -1,0 +1,794 @@
+[
+    {
+        "name": "Jim Morrison",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Oscar Wilde",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Marcel Proust",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Edith Piaf",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Frédéric Chopin",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Max Ernst",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Honoré de Balzac",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Gertrude Stein",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Molière",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Camille Pissarro",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Colette",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jean de La Fontaine",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Georges Bizet",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Félix Faure",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Georges Seurat",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Paul Éluard",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Guillaume Apollinaire",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Amedeo Modigliani",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Georges Méliès",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Théodore Géricault",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Eugène Delacroix",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Richard Wright",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Simone Signoret",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Samuel Hahnemann",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Aristide Maillol",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Charles Garnier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "James Douglas Morrison",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Sarah Bernhardt",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Gustave Doré",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Fernandel",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Édouard Manet",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Paul Signac",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Théodore de Banville",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Léon Gambetta",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Ludwig van Beethoven",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Frédéric-Auguste Bartholdi",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Emile Zola",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "André Citroën",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jean-François Lyotard",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Pierre Desproges",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Frédéric Passy",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Marie Trintignant",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Théophile Gautier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jacques-Louis David",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Gilbert Bécaud",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Auguste Comte",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Maria Callas",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Gérard Philipe",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jean-Pierre Melville",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Henri Cartier-Bresson",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jean-Paul Belmondo",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Georges Feydeau",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jules Michelet",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Georges Perec",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Frédéric Bazille",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jean-Auguste-Dominique Ingres",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Louis Visconti",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Charles Fourier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Henri Bergson",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Pierre-Simon Laplace",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "René Goscinny",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Honoré Daumier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Louis Braille",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "André-Marie Ampère",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Abelard",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Marcel Cerdan",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Émile Gaboriau",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Gaspard Monge",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Antoine-Augustin Parmentier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Henri Salvador",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jacques Brel",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jean de La Bruyère",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Fernand Braudel",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Serge Gainsbourg",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Paul Verlaine",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Antoine de Saint-Exupéry",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Pierre Corneille",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Michel Petrucciani",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Eugène Scribe",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Georges Perec",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Frédéric Bazille",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jean-Auguste-Dominique Ingres",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Louis Visconti",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Charles Fourier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Henri Bergson",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Pierre-Simon Laplace",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "René Goscinny",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Honoré Daumier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Louis Braille",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "André-Marie Ampère",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Abelard",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Marcel Cerdan",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Émile Gaboriau",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Gaspard Monge",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Antoine-Augustin Parmentier",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Henri Salvador",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jacques Brel",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jean de La Bruyère",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Fernand Braudel",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Serge Gainsbourg",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Paul Verlaine",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Antoine de Saint-Exupéry",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Pierre Corneille",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Michel Petrucciani",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Eugène Scribe",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Francis Poulenc",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Adolphe Adam",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Georges Clemenceau",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Pauline Viardot",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Hippolyte Taine",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Fernando Pessoa",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Guy de Maupassant",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jean-Michel Basquiat",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Allan Kardec",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Auguste Comte",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jean Cocteau",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Jean Monnet",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jean-Pierre Vernant",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Théophile Steinlen",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Gilbert du Motier, Marquis de Lafayette",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Alexandre Dumas",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Amédée Achard",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "André Breton",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Antoine Watteau",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Antonin Artaud",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Auguste Rodin",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Benjamin Constant",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Blaise Cendrars",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Camille Saint-Saëns",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Carmen McRae",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Carlo Collodi",
+        "buriedAtPereLachaise": true
+    },
+    {
+        "name": "Claude Monet",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Marie Curie",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Édouard Manet",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Gustave Eiffel",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Antoine de Saint-Exupéry",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Charles Baudelaire",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Marcel Proust",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Emile Zola",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Franz Liszt",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Victor Hugo",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Albert Einstein",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Auguste Renoir",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Auguste Comte",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Frédéric Chopin",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Camille Claudel",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Rosa Bonheur",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Alfred de Musset",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Alphonse de Lamartine",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Antoine de Rivarol",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Aristide Briand",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Blaise Pascal",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Charles Fourier",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Charles Nicolle",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Claude Debussy",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Dominique Ingres",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Edgar Degas",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Edouard Branly",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Edouard Herriot",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Edouard Manet",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Eugène Delacroix",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "François-René de Chateaubriand",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Georges Brassens",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Georges Clemenceau",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Georges Courteline",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Gérard Philipe",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Henri Bergson",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Henri Matisse",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Henri Poincaré",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jean Racine",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jean-Jacques Rousseau",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Jules Verne",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Lazare Carnot",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Le Corbusier",
+        "buriedAtPerelachaise": false
+    },
+    {
+        "name": "Louis Braille",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Louis Lumière",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Louis Pasteur",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Maurice Ravel",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Michel Foucault",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Napoléon Bonaparte",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Olympe de Gouges",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Paul Cézanne",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Paul Éluard",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Paul Verlaine",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Pierre Corneille",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Pierre Curie",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "René Descartes",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Romain Rolland",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Stéphane Mallarmé",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Sylvia Beach",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Théodore Géricault",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Théophile Gautier",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Toulouse-Lautrec",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Tristan Bernard",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Voltaire",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Yves Montand",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Zinedine Zidane",
+        "buriedAtPereLachaise": false
+    },
+    {
+        "name": "Antoine-Laurent de Lavoisier",
+        "buriedAtPereLachaise": false
+    }
+]
