@@ -5,6 +5,9 @@ import {
   ButtonsContainer,
   ButtonStyled,
 } from "./ResultContainer.styles";
+import {
+  DescriptionText,
+} from "../QuestionContainer/QuestionContainer.styles";
 import ResetButton from "../ResetButton/ResetButton";
 
 const ResultContainer = ({
@@ -25,6 +28,11 @@ const ResultContainer = ({
           ? "Bien vu"
           : `Eh bien ${personality.buriedAtPereLachaise ? "si" : "non"}`}
       </ResultText>
+      {!isCorrect &&
+        <DescriptionText>
+          {personality.explanation}
+        </DescriptionText>
+      }
       <ResultText>
         {score} / {attempts}
       </ResultText>
