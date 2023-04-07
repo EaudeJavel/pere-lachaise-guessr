@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GameOverContainer, GameOverHeading } from "./Game.styles"
+import { GameOverContainer, GameOverHeading, Flex } from "./Game.styles"
 import personalities from "../../data/personalities.json";
 import Ladderboard from "../Ladderboard/Ladderboard";
 import TweetButton from "../TweetButton/TweetButton";
@@ -8,7 +8,7 @@ import ResultContainer from "../ResultContainer/ResultContainer";
 import ScoreboardButton from "../ScoreBoardButton/ScoreBoardButton";
 import AnswerButton from "../AnswerButton/AnswerButton";
 
-const Game = ({ mode }) => {
+const Game = ({ mode, resetGameMode }) => {
   const [personality, setPersonality] = useState(
     personalities[Math.floor(Math.random() * personalities.length)]
   );
@@ -160,9 +160,14 @@ const Game = ({ mode }) => {
       )
     ) : (
       <GameOverContainer>
-        <GameOverHeading>Game finished</GameOverHeading>
-        <AnswerButton onClick={handleReset}>Try again</AnswerButton>
-      </GameOverContainer>
+      <GameOverHeading>Pas mal !</GameOverHeading>
+      <Flex>
+        <AnswerButton onClick={handleReset}>Rejouer</AnswerButton>
+        <AnswerButton onClick={resetGameMode}>
+          Retour au menu
+        </AnswerButton>
+      </Flex>
+    </GameOverContainer>
     )}
     {showScoreboard && (
       <Ladderboard

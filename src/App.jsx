@@ -38,11 +38,15 @@ const App = () => {
     setGameMode(mode);
   };
 
+  const resetGameMode = () => {
+    setGameMode(null);
+  };
+
   return (
     <>
       <AppContainer onKeyDown={handleKeyDown} tabIndex={0}>
         {gameMode ? (
-          <Game mode={gameMode} />
+          <Game mode={gameMode} resetGameMode={resetGameMode} />
         ) : (
           <GameModeSelection
             handleGameModeSelection={handleGameModeSelection}

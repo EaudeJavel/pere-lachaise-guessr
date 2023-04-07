@@ -13,3 +13,7 @@ export const GameOverHeading = styled.h2`
   font-size: 2rem;
   margin-bottom: 1rem;
 `;
+
+export const Flex = styled.div`
+    display: flex;
+`
