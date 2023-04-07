@@ -6,7 +6,7 @@ import {
   AnswerContainer,
   Timer
 } from "./QuestionContainer.styles";
-import AnswerButton from "../AnswerButton/AnswerButton";
+import Button from "../Button/Button";
 
 const QuestionContainer = ({
   personality,
@@ -21,8 +21,8 @@ const QuestionContainer = ({
       </QuestionText>
       <DescriptionText>{personality.description}</DescriptionText>
       <AnswerContainer>
-        <AnswerButton onClick={() => handleAnswer(true)}>Oui</AnswerButton>
-        <AnswerButton onClick={() => handleAnswer(false)}>Non</AnswerButton>
+        <Button onClick={() => handleAnswer(true)}>Oui</Button>
+        <Button onClick={() => handleAnswer(false)}>Non</Button>
       </AnswerContainer>
       {mode === "chrono" && (
         <Timer>

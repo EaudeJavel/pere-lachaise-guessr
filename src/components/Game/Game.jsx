@@ -6,7 +6,7 @@ import TweetButton from "../TweetButton/TweetButton";
 import QuestionContainer from "../QuestionContainer/QuestionContainer";
 import ResultContainer from "../ResultContainer/ResultContainer";
 import ScoreboardButton from "../ScoreBoardButton/ScoreBoardButton";
-import AnswerButton from "../AnswerButton/AnswerButton";
+import Button from "../Button/Button";
 
 const Game = ({ mode, resetGameMode }) => {
   const [personality, setPersonality] = useState(
@@ -162,10 +162,10 @@ const Game = ({ mode, resetGameMode }) => {
       <GameOverContainer>
       <GameOverHeading>Pas mal !</GameOverHeading>
       <Flex>
-        <AnswerButton onClick={handleReset}>Rejouer</AnswerButton>
-        <AnswerButton onClick={resetGameMode}>
+        <Button onClick={handleReset}>Rejouer</Button>
+        <Button onClick={resetGameMode}>
           Retour au menu
-        </AnswerButton>
+        </Button>
       </Flex>
     </GameOverContainer>
     )}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const ButtonCustom = styled.button`
   font-size: 18px;
   font-weight: bold;
   background-color: ${(props) => (props.isCorrect ? "#4CAF50" : "#FF5722")};

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import AnswerButton from "./AnswerButton/AnswerButton";
+import Button from "./Button/Button";
 
 const Container = styled.div`
   display: flex;
@@ -47,8 +47,8 @@ const GameModeSelection = ({ handleGameModeSelection }) => {
       <Pa>Devine si la personne est enterrée au Père Lachaise ou non</Pa>
       <Heading2>A quel mode veux-tu jouer?</Heading2>
       <Flex>
-        <AnswerButton onClick={handleNormalModeClick}>Normal</AnswerButton>
-        <AnswerButton onClick={handleChronoModeClick}>Chrono</AnswerButton>
+        <Button onClick={handleNormalModeClick}>Normal</Button>
+        <Button onClick={handleChronoModeClick}>Chrono</Button>
       </Flex>
     </Container>
   );

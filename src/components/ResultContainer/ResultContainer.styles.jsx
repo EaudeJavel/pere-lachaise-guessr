@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import AnswerButton from "../AnswerButton/AnswerButton";
+import Button from "../Button/Button";
 
 export const ResultContainerStyled = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ export const ButtonsContainer = styled.div`
   margin-top: 20px;
 `;
 
-export const AnswerButtonStyled = styled(AnswerButton)`
+export const ButtonStyled = styled(Button)`
   &:before {
     content: "";
     position: absolute;

@@ -3,7 +3,7 @@ import {
   ResultContainerStyled,
   ResultText,
   ButtonsContainer,
-  AnswerButtonStyled,
+  ButtonStyled,
 } from "./ResultContainer.styles";
 import ResetButton from "../ResetButton/ResetButton";
 
@@ -36,9 +36,9 @@ const ResultContainer = ({
         </>
       ) : (
         <ButtonsContainer>
-          <AnswerButtonStyled onClick={() => handleNextQuestion(true)}>
+          <ButtonStyled onClick={() => handleNextQuestion(true)}>
             Prochaine question
-          </AnswerButtonStyled>
+          </ButtonStyled>
           <ResetButton onClick={handleReset} />
         </ButtonsContainer>
       )}
