@@ -4,10 +4,16 @@ import {
   QuestionText,
   DescriptionText,
   AnswerContainer,
+  Timer
 } from "./QuestionContainer.styles";
 import AnswerButton from "../AnswerButton/AnswerButton";
 
-const QuestionContainer = ({ personality, handleAnswer }) => {
+const QuestionContainer = ({
+  personality,
+  handleAnswer,
+  timer,
+  mode,
+}) => {
   return (
     <Container>
       <QuestionText>
@@ -18,6 +24,11 @@ const QuestionContainer = ({ personality, handleAnswer }) => {
         <AnswerButton onClick={() => handleAnswer(true)}>Oui</AnswerButton>
         <AnswerButton onClick={() => handleAnswer(false)}>Non</AnswerButton>
       </AnswerContainer>
+      {mode === "chrono" && (
+        <Timer>
+          Remaining time: {timer}s
+        </Timer>
+      )}
     </Container>
   );
 };

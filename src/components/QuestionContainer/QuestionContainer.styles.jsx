@@ -25,3 +25,14 @@ export const AnswerContainer = styled.div`
   justify-content: space-around;
   margin-bottom: 20px;
 `;
+
+export const Timer = styled.div`
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff3c3c;
+  background-color: #fff4f4;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;

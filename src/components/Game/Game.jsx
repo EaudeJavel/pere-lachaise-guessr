@@ -6,7 +6,7 @@ import QuestionContainer from "../QuestionContainer/QuestionContainer";
 import ResultContainer from "../ResultContainer/ResultContainer";
 import ScoreboardButton from "../ScoreBoardButton/ScoreBoardButton";
 
-const Game = () => {
+const Game = ({ mode }) => {
   const [personality, setPersonality] = useState(
     personalities[Math.floor(Math.random() * personalities.length)]
   );
@@ -22,6 +22,69 @@ const Game = () => {
       parseInt(localStorage.getItem("highestScore")) || 0;
     return savedHighestScore;
   });
+  const [countdownId, setCountdownId] = useState(null);
+  const [timer, setTimer] = useState(60);
+  const [isGameOver, setIsGameOver] = useState(false);
+
+  const handleAnswer = (answer) => {
+    if (mode === "chrono") {
+      clearTimeout(countdownId);
+    }
+
+    const currentPersonality = personality;
+    const isCorrect = answer === currentPersonality.buriedAtPereLachaise;
+    setIsCorrect(isCorrect);
+    setAttempts((prevAttempts) => prevAttempts + 1);
+
+    if (isCorrect) {
+      const newScore = score + 1;
+      setScore(newScore);
+
+      if (newScore > highestScore) {
+        setHighestScore(newScore);
+      }
+    }
+
+    setShowResult(true);
+    setShowScoreboard(false);
+  };
+
+  const handleNextQuestion = () => {
+    const randomIndex = Math.floor(Math.random() * personalities.length);
+    const nextPersonality = personalities[randomIndex];
+    setPersonality(nextPersonality);
+    setShowResult(false);
+    setIsCorrect(false);
+    setShowScoreboard(false);
+    setShowTwitterBtn(false);
+
+    if (mode === "chrono") {
+      const countdown = setTimeout(() => {
+        setTimer((prevTimer) => prevTimer - 1);
+      }, 1000);
+      setCountdownId(countdown);
+    }
+  };
+
+  const handleReset = () => {
+    const randomIndex = Math.floor(Math.random() * personalities.length);
+    const nextPersonality = personalities[randomIndex];
+    setPersonality(nextPersonality);
+    setScore(0);
+    setIsCorrect(false);
+    setShowResult(false);
+    setShowScoreboard(false);
+    setShowTwitterBtn(false);
+    setIsGameOver(false);
+    if (mode === "chrono") {
+      setTimer(60);
+    }
+  };
+
+  const handleScoreboardClick = () => {
+    setShowScoreboard((prevShowScoreboard) => !prevShowScoreboard);
+    setShowTwitterBtn((prevShowTwitter) => !prevShowTwitter);
+  };
 
   useEffect(() => {
     const savedScores = JSON.parse(localStorage.getItem("scores")) || [];
@@ -47,57 +110,29 @@ const Game = () => {
     }
   }, [showResult, score, scores]);
 
-  const handleAnswer = (answer) => {
-    const currentPersonality = personality;
-    const isCorrect = answer === currentPersonality.buriedAtPereLachaise;
-    setIsCorrect(isCorrect);
-
-    setAttempts((prevAttempts) => prevAttempts + 1);
-
-    if (isCorrect) {
-      const newScore = score + 1;
-      setScore(newScore);
-
-      if (newScore > highestScore) {
-        setHighestScore(newScore);
-      }
-    }
-
-    setShowResult(true);
-    setShowScoreboard(false);
-  };
-
-  const handleNextQuestion = () => {
-    const randomIndex = Math.floor(Math.random() * personalities.length);
-    const nextPersonality = personalities[randomIndex];
-    setPersonality(nextPersonality);
-    setShowResult(false);
-    setIsCorrect(false);
-    setShowScoreboard(false);
-    setShowTwitterBtn(false);
-  };
-
-  const handleReset = () => {
-    const randomIndex = Math.floor(Math.random() * personalities.length);
-    const nextPersonality = personalities[randomIndex];
-    setPersonality(nextPersonality);
-    setScore(0);
-    setIsCorrect(false);
-    setShowResult(false);
-    setShowScoreboard(false);
-    setShowTwitterBtn(false);
-  };
-
-  const handleScoreboardClick = () => {
-    setShowScoreboard((prevShowScoreboard) => !prevShowScoreboard);
-    setShowTwitterBtn((prevShowTwitter) => !prevShowTwitter);
-  };
-
   useEffect(() => {
     if (showResult && score > 0 && !scores.includes(score)) {
       setScores((prevScores) => [...prevScores, score].sort((a, b) => b - a));
     }
   }, [showResult, score, scores]);
+
+  useEffect(() => {
+    let countdown;
+    if (mode === "chrono" && timer > 0 && !isGameOver) {
+      countdown = setTimeout(() => {
+        setTimer((prevTimer) => prevTimer - 1);
+      }, 1000);
+      setCountdownId(countdown);
+    } else {
+      setIsGameOver(true);
+      clearTimeout(countdown);
+    }
+
+    return () => {
+      clearTimeout(countdown);
+    };
+  }, [timer, mode, isGameOver]);
+
 
   return (
     <>
@@ -105,6 +140,8 @@ const Game = () => {
         <QuestionContainer
           personality={personality}
           handleAnswer={handleAnswer}
+          timer={timer}
+          mode={mode}
         />
       ) : (
         <ResultContainer
@@ -114,6 +151,7 @@ const Game = () => {
           attempts={attempts}
           handleNextQuestion={handleNextQuestion}
           handleReset={handleReset}
+          isGameOver={isGameOver && timer === 0}
         />
       )}
       {showScoreboard && (

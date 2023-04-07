@@ -14,6 +14,9 @@ const ResultContainer = ({
   attempts,
   handleNextQuestion,
   handleReset,
+  mode,
+  timer,
+  isGameOver,
 }) => {
   return (
     <ResultContainerStyled>
@@ -25,12 +28,20 @@ const ResultContainer = ({
       <ResultText>
         {score} / {attempts}
       </ResultText>
-      <ButtonsContainer>
-        <AnswerButtonStyled onClick={handleNextQuestion}>
-          Prochaine question
-        </AnswerButtonStyled>
-        <ResetButton onClick={handleReset} />
-      </ButtonsContainer>
+      {mode === "chrono" && <div>Time remaining: {timer} seconds</div>}
+      {isGameOver ? (
+        <>
+          <ResultText>Game Over!</ResultText>
+          <ResetButton onClick={handleReset}>Restart Game</ResetButton>
+        </>
+      ) : (
+        <ButtonsContainer>
+          <AnswerButtonStyled onClick={() => handleNextQuestion(true)}>
+            Prochaine question
+          </AnswerButtonStyled>
+          <ResetButton onClick={handleReset} />
+        </ButtonsContainer>
+      )}
     </ResultContainerStyled>
   );
 };

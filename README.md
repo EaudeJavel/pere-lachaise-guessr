@@ -1,6 +1,6 @@
 # Père Lachaise Guessr
 
-Père Lachaise Guessr is a simple web game where you have to guess whether a famous person is buried at Père Lachaise cemetery in Paris or not. The game is a fun way to test your knowledge of history and culture, while learning about some of the most famous people in the world.
+Père Lachaise Guessr is an engaging web-based game that challenges players to determine whether a famous individual is buried at the renowned Père Lachaise cemetery in Paris. This entertaining game tests your knowledge of history and culture while introducing you to some of the world's most celebrated personalities.
 
 ## Getting Started
 
@@ -17,13 +17,13 @@ Now, you can access the game at [localhost:5173](http://localhost:5173/).
 
 ## How to Play
 
-When you start the game, you will be presented with the name of a famous person. Your task is to guess whether they are buried at Père Lachaise cemetery or not. To do this, click on either the "Yes" or "No" button.
+Upon starting the game, you will be presented with the name of a famous person. Your task is to determine if they are buried at the Père Lachaise cemetery by clicking on either the "Yes" or "No" button.
 
-If you guess correctly, you will earn a point. If you guess incorrectly, you will not earn a point. After each question, you will be shown whether your answer was correct or not, and the correct answer will be revealed.
+Correct guesses will earn you a point, while incorrect guesses will not. Following each question, the game will reveal whether your answer was correct and provide the correct answer.
 
-At any time during the game, you can press the "F" key to toggle full screen mode.
+To toggle full-screen mode, press the "F" key at any time during the game.
 
-Your top scores will be stored in the local storage of your browser so that you can keep track of your progress over time.
+Your highest scores will be saved in your browser's local storage, allowing you to track your progress over multiple sessions.
 
 ## Built With
 
