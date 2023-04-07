@@ -41,7 +41,6 @@ const App = () => {
   return (
     <>
       <AppContainer onKeyDown={handleKeyDown} tabIndex={0}>
-
         {gameMode ? (
           <Game mode={gameMode} />
         ) : (
