@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { GameOverContainer, GameOverHeading } from "./Game.styles"
 import personalities from "../../data/personalities.json";
 import Ladderboard from "../Ladderboard/Ladderboard";
 import TweetButton from "../TweetButton/TweetButton";
 import QuestionContainer from "../QuestionContainer/QuestionContainer";
 import ResultContainer from "../ResultContainer/ResultContainer";
 import ScoreboardButton from "../ScoreBoardButton/ScoreBoardButton";
+import AnswerButton from "../AnswerButton/AnswerButton";
 
 const Game = ({ mode }) => {
   const [personality, setPersonality] = useState(
@@ -23,8 +25,8 @@ const Game = ({ mode }) => {
     return savedHighestScore;
   });
   const [countdownId, setCountdownId] = useState(null);
-  const [timer, setTimer] = useState(60);
-  const [isGameOver, setIsGameOver] = useState(false);
+  const [timer, setTimer] = useState(3);
+  const [isGameFinished, setisGameFinished] = useState(false);
 
   const handleAnswer = (answer) => {
     if (mode === "chrono") {
@@ -75,7 +77,7 @@ const Game = ({ mode }) => {
     setShowResult(false);
     setShowScoreboard(false);
     setShowTwitterBtn(false);
-    setIsGameOver(false);
+    setisGameFinished(false);
     if (mode === "chrono") {
       setTimer(60);
     }
@@ -118,25 +120,27 @@ const Game = ({ mode }) => {
 
   useEffect(() => {
     let countdown;
-    if (mode === "chrono" && timer > 0 && !isGameOver) {
+    if (mode === "chrono" && timer > 0 && !isGameFinished) {
       countdown = setTimeout(() => {
         setTimer((prevTimer) => prevTimer - 1);
       }, 1000);
       setCountdownId(countdown);
+    } else if (mode === "chrono" && timer === 0) {
+      setisGameFinished(true);
+      clearTimeout(countdown);
     } else {
-      setIsGameOver(true);
       clearTimeout(countdown);
     }
 
     return () => {
       clearTimeout(countdown);
     };
-  }, [timer, mode, isGameOver]);
-
+  }, [timer, mode, isGameFinished]);
 
   return (
     <>
-      {!showResult ? (
+    {!isGameFinished ? (
+      !showResult ? (
         <QuestionContainer
           personality={personality}
           handleAnswer={handleAnswer}
@@ -151,23 +155,29 @@ const Game = ({ mode }) => {
           attempts={attempts}
           handleNextQuestion={handleNextQuestion}
           handleReset={handleReset}
-          isGameOver={isGameOver && timer === 0}
+          isGameFinished={isGameFinished}
         />
-      )}
-      {showScoreboard && (
-        <Ladderboard
-          highestScore={highestScore}
-          handleClose={() => setShowScoreboard(false)}
-        />
-      )}
-      {showResult && (
-        <>
-          <ScoreboardButton onClick={handleScoreboardClick} />
-          {showTwitterBtn && <TweetButton score={score} />}
-        </>
-      )}
-    </>
+      )
+    ) : (
+      <GameOverContainer>
+        <GameOverHeading>Game finished</GameOverHeading>
+        <AnswerButton onClick={handleReset}>Try again</AnswerButton>
+      </GameOverContainer>
+    )}
+    {showScoreboard && (
+      <Ladderboard
+        highestScore={highestScore}
+        handleClose={() => setShowScoreboard(false)}
+      />
+    )}
+    {showResult && (
+      <>
+        <ScoreboardButton onClick={handleScoreboardClick} />
+        {showTwitterBtn && <TweetButton score={score} />}
+      </>
+    )}
+  </>
   );
-};
+}
 
 export default Game;

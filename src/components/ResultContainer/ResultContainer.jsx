@@ -16,7 +16,7 @@ const ResultContainer = ({
   handleReset,
   mode,
   timer,
-  isGameOver,
+  isGameFinished,
 }) => {
   return (
     <ResultContainerStyled>
@@ -29,7 +29,7 @@ const ResultContainer = ({
         {score} / {attempts}
       </ResultText>
       {mode === "chrono" && <div>Time remaining: {timer} seconds</div>}
-      {isGameOver ? (
+      {isGameFinished ? (
         <>
           <ResultText>Game Over!</ResultText>
           <ResetButton onClick={handleReset}>Restart Game</ResetButton>
