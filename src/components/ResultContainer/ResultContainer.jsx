@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ResultContainerStyled,
   ResultText,
@@ -7,7 +7,8 @@ import {
 } from "./ResultContainer.styles";
 import ResetButton from "../ResetButton/ResetButton";
 
-const ResultContainer = ({ isCorrect, personality, score, personalitiesLength, handleNextQuestion, handleReset }) => {
+const ResultContainer = ({ isCorrect, personality, score, attempts, handleNextQuestion, handleReset }) => {
+
   return (
     <ResultContainerStyled>
       <ResultText>
@@ -16,10 +17,10 @@ const ResultContainer = ({ isCorrect, personality, score, personalitiesLength, h
           : `Eh bien ${personality.buriedAtPereLachaise ? "si" : "non"}`}
       </ResultText>
       <ResultText>
-        {score} / {personalitiesLength}
+        {score} / {attempts}
       </ResultText>
       <ButtonsContainer>
-        <AnswerButtonStyled onClick={handleNextQuestion}>
+      <AnswerButtonStyled onClick={handleNextQuestion}>
           Prochaine question
         </AnswerButtonStyled>
         <ResetButton onClick={handleReset} />

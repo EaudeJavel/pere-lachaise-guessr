@@ -16,6 +16,7 @@ const Game = () => {
   const [showScoreboard, setShowScoreboard] = useState(false);
   const [showTwitterBtn, setShowTwitterBtn] = useState(false);
   const [scores, setScores] = useState([]);
+  const [attempts, setAttempts] = useState(0);
   const [highestScore, setHighestScore] = useState(() => {
     const savedHighestScore =
       parseInt(localStorage.getItem("highestScore")) || 0;
@@ -50,6 +51,8 @@ const Game = () => {
     const currentPersonality = personality;
     const isCorrect = answer === currentPersonality.buriedAtPereLachaise;
     setIsCorrect(isCorrect);
+
+    setAttempts((prevAttempts) => prevAttempts + 1);
 
     if (isCorrect) {
       const newScore = score + 1;
@@ -108,7 +111,7 @@ const Game = () => {
           isCorrect={isCorrect}
           personality={personality}
           score={score}
-          personalitiesLength={personalities.length}
+          attempts={attempts}
           handleNextQuestion={handleNextQuestion}
           handleReset={handleReset}
         />
