@@ -29,9 +29,8 @@ const Pa = styled.p`
 `;
 
 const Flex = styled.div`
-  display:flex;
+  display: flex;
 `;
-
 
 const GameModeSelection = ({ handleGameModeSelection }) => {
   const handleNormalModeClick = () => {

@@ -1,5 +1,10 @@
 import React from "react";
-import { Container, QuestionText, DescriptionText, AnswerContainer } from "./QuestionContainer.styles";
+import {
+  Container,
+  QuestionText,
+  DescriptionText,
+  AnswerContainer,
+} from "./QuestionContainer.styles";
 import AnswerButton from "../AnswerButton/AnswerButton";
 
 const QuestionContainer = ({ personality, handleAnswer }) => {

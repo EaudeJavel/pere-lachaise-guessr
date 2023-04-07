@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   ResultContainerStyled,
   ResultText,
@@ -7,8 +7,14 @@ import {
 } from "./ResultContainer.styles";
 import ResetButton from "../ResetButton/ResetButton";
 
-const ResultContainer = ({ isCorrect, personality, score, attempts, handleNextQuestion, handleReset }) => {
-
+const ResultContainer = ({
+  isCorrect,
+  personality,
+  score,
+  attempts,
+  handleNextQuestion,
+  handleReset,
+}) => {
   return (
     <ResultContainerStyled>
       <ResultText>
@@ -20,7 +26,7 @@ const ResultContainer = ({ isCorrect, personality, score, attempts, handleNextQu
         {score} / {attempts}
       </ResultText>
       <ButtonsContainer>
-      <AnswerButtonStyled onClick={handleNextQuestion}>
+        <AnswerButtonStyled onClick={handleNextQuestion}>
           Prochaine question
         </AnswerButtonStyled>
         <ResetButton onClick={handleReset} />
