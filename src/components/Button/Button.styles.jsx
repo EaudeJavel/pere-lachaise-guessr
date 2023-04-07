@@ -40,4 +40,10 @@ export const ButtonCustom = styled.button`
     height: 50px;
     transition: width 0.1s ease-out, height 0.1s ease-out;
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 10px;
+  }
 `;

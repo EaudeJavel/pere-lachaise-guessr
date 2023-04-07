@@ -11,15 +11,26 @@ export const GameOverContainer = styled.div`
 
 export const GameOverHeading = styled.h2`
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; ;
 `;
 
 export const Flex = styled.div`
-    display: flex;
-`
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 
 export const ScoreDisplay = styled.p`
   font-size: 24px;
   color: #ffffff;
   margin: 16px 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    margin: 8px 0;
+  }
 `;

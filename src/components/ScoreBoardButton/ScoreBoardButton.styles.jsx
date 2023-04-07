@@ -7,8 +7,10 @@ export const ScoreboardButtonStyled= styled.button`
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10 20px;
   margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   cursor: pointer;
   &:hover {
     opacity: 0.8;

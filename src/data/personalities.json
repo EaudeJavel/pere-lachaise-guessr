@@ -75,11 +75,6 @@
         "description": "Georges Seurat était un peintre post-impressionniste français du XIXe siècle. Il est surtout connu pour son style de peinture pointilliste, dans lequel les images sont créées en utilisant de petites touches de couleur. Seurat a créé de nombreuses œuvres célèbres, telles que Un dimanche après-midi à l'île de la Grande Jatte. Il est considéré comme l'un des artistes les plus influents de son époque."
     },
     {
-        "name": "Paul Éluard",
-        "buriedAtPereLachaise": true,
-        "description": "Paul Éluard était un poète français du XXe siècle et un membre important du mouvement surréaliste. Il a créé de nombreuses œuvres célèbres, telles que Capitale de la douleur et La Liberté ou l'Amour!. Éluard a influencé de nombreux écrivains et penseurs après lui."
-    },
-    {
         "name": "Guillaume Apollinaire",
         "buriedAtPereLachaise": true,
         "description": "Guillaume Apollinaire était un poète, dramaturge et critique d'art français du début du XXe siècle. Il a été l'un des premiers promoteurs du mouvement surréaliste et a également été impliqué dans le cubisme. Apollinaire a créé de nombreuses œuvres importantes, telles que 'Alcools' et 'Les Mamelles de Tirésias'."
@@ -93,11 +88,6 @@
         "name": "Georges Méliès",
         "buriedAtPereLachaise": true,
         "description": "Georges Méliès était un illusionniste et réalisateur français du début du XXe siècle. Il est surtout connu pour ses films fantastiques et imaginatifs, tels que 'Le Voyage dans la Lune'. Méliès a été un pionnier du cinéma et a influencé de nombreux cinéastes après lui."
-    },
-    {
-        "name": "Théodore Géricault",
-        "buriedAtPereLachaise": true,
-        "description": "Théodore Géricault était un peintre romantique français du XIXe siècle, connu pour ses œuvres dramatiques et émotionnelles, telles que 'Le Radeau de la Méduse'. Il a influencé de nombreux artistes après lui et est considéré comme l'un des plus grands peintres de l'histoire de l'art français."
     },
     {
         "name": "Eugène Delacroix",
@@ -150,11 +140,6 @@
         "description": "Fernandel était un acteur et comédien français connu pour ses rôles dans des films tels que 'La Vache et le Prisonnier'. Il a également travaillé comme chanteur et humoriste."
     },
     {
-        "name": "Édouard Manet",
-        "buriedAtPereLachaise": true,
-        "description": "Édouard Manet était un peintre français qui a été une figure clé de la transition du réalisme à l'impressionnisme. Ses œuvres les plus célèbres incluent 'Le Déjeuner sur l'herbe' et 'Olympia'."
-    },
-    {
         "name": "Paul Signac",
         "buriedAtPereLachaise": true,
         "description": "Paul Signac était un peintre français et un pionnier de la technique du pointillisme, qui utilise de petites touches de couleur pour créer une image plus grande. Il était un membre important du mouvement néo-impressionniste et a influencé de nombreux artistes après lui."
@@ -172,17 +157,13 @@
     {
         "name": "Ludwig van Beethoven",
         "buriedAtPereLachaise": false,
-        "description": "Ludwig van Beethoven était un compositeur et pianiste allemand considéré comme l'un des plus grands compositeurs de tous les temps. Il a créé des œuvres remarquables telles que la Neuvième Symphonie, le Concerto pour piano n° 5 'L'Empereur' et la Sonate pour piano n° 14 'Clair de lune'. Il a vécu à Vienne pendant la plus grande partie de sa vie et est mort en 1827 à l'âge de 56 ans."
+        "description": "Ludwig van Beethoven était un compositeur et pianiste allemand considéré comme l'un des plus grands compositeurs de tous les temps. Il a créé des œuvres remarquables telles que la Neuvième Symphonie, le Concerto pour piano n° 5 'L'Empereur' et la Sonate pour piano n° 14 'Clair de lune'. Il a vécu à Vienne pendant la plus grande partie de sa vie et est mort en 1827 à l'âge de 56 ans.",
+        "explanation": "Beethoven est enterré au cimetière central de Vienne, en Autriche."
     },
     {
         "name": "Frédéric-Auguste Bartholdi",
         "buriedAtPereLachaise": true,
         "description": "Frédéric-Auguste Bartholdi était un sculpteur français qui a conçu la Statue de la Liberté dans le port de New York. Il a également créé d'autres œuvres importantes, notamment la Fontaine de Marnes-la-Coquette et la statue de Vercingétorix à Clermont-Ferrand. Il est considéré comme l'un des plus grands sculpteurs de la fin du XIXe siècle en France."
-    },
-    {
-        "name": "Emile Zola",
-        "buriedAtPereLachaise": true,
-        "description": "Emile Zola était un écrivain, dramaturge et journaliste français qui a été une figure de proue du mouvement littéraire connu sous le nom de naturalisme. Il est surtout connu pour son œuvre magistrale, Les Rougon-Macquart, une série de 20 romans qui racontent l'histoire d'une famille sous le Second Empire."
     },
     {
         "name": "André Citroën",
@@ -210,11 +191,6 @@
         "description": "Marie Trintignant était une actrice française qui a joué dans plus de 50 films avant sa mort tragique en 2003. Elle a remporté de nombreux prix pour ses performances et est considérée comme l'une des grandes actrices françaises de sa génération."
     },
     {
-        "name": "Théophile Gautier",
-        "buriedAtPereLachaise": true,
-        "description": "Théophile Gautier était un poète, romancier et critique français associé au mouvement romantique en littérature. Il a écrit des poèmes, des romans, des critiques d'art et des pièces de théâtre, et est surtout connu pour son poème 'La Morte amoureuse' et son roman 'Mademoiselle de Maupin'."
-    },
-    {
         "name": "Jacques-Louis David",
         "buriedAtPereLachaise": true,
         "description": "Jacques-Louis David était un peintre français qui a été une figure importante du mouvement artistique néoclassique. Il a été le peintre officiel de Napoléon Bonaparte et a produit de nombreuses œuvres d'art importantes, telles que 'Le Serment des Horaces' et 'Le Sacre de Napoléon'."
@@ -231,7 +207,7 @@
     },
     {
         "name": "Maria Callas",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Maria Callas était une soprano américaine d'origine grecque largement considérée comme l'une des plus grandes chanteuses d'opéra du XXe siècle. Elle était connue pour son incroyable voix, sa technique vocale virtuose et sa capacité à incarner des personnages avec émotion sur scène. Callas a été acclamée pour ses performances dans des opéras tels que 'Norma', 'La Traviata' et 'Tosca', et a été une force motrice dans la popularisation de l'opéra auprès du grand public. Elle est décédée en 1977."
     },
     {
@@ -251,7 +227,7 @@
     },
     {
         "name": "Jean-Paul Belmondo",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Jean-Paul Belmondo était un acteur français connu pour ses rôles dans des films tels que 'À bout de souffle' et 'Pierrot le fou'. Il a été l'un des acteurs les plus populaires du cinéma français des années 1960 et 1970 et a remporté de nombreux prix pour son travail au cinéma."
     },
     {
@@ -272,7 +248,8 @@
     {
         "name": "Frédéric Bazille",
         "buriedAtPereLachaise": false,
-        "description": "Frédéric Bazille était un peintre français associé au mouvement impressionniste qui est mort lors de la guerre franco-prussienne. Il était connu pour ses peintures lumineuses et colorées qui ont capturé la vie contemporaine et la beauté naturelle."
+        "description": "Frédéric Bazille était un peintre français associé au mouvement impressionniste qui est mort lors de la guerre franco-prussienne. Il était connu pour ses peintures lumineuses et colorées qui ont capturé la vie contemporaine et la beauté naturelle.",
+        "explanation": "Bazille est enterré au cimetière protestant de Montpellier, en France."
     },
     {
         "name": "Jean-Auguste-Dominique Ingres",
@@ -285,149 +262,43 @@
         "description": "Louis Visconti était un architecte français qui a conçu de nombreux bâtiments remarquables, tels que la pyramide du Louvre et la tombe de Napoléon Bonaparte aux Invalides à Paris."
     },
     {
-        "name": "Charles Fourier",
-        "buriedAtPereLachaise": true,
-        "description": "Charles Fourier était un philosophe et théoricien social français qui a développé le concept de socialisme utopique, cherchant à construire une société harmonieuse basée sur le libre choix des individus."
-    },
-    {
-        "name": "Henri Bergson",
-        "buriedAtPereLachaise": true,
-        "description": "Henri Bergson était un philosophe français qui a remporté le Prix Nobel de littérature en 1927 pour son travail sur la nature de la conscience et du temps. Il a développé une philosophie de l'intuition et de la durée, s'opposant aux théories scientifiques de son époque."
-    },
-    {
         "name": "Pierre-Simon Laplace",
         "buriedAtPereLachaise": true,
         "description": "Pierre-Simon Laplace était un mathématicien et astronome français connu pour ses contributions aux domaines de la statistique, de la mécanique céleste et de la théorie des probabilités. Il a également proposé la théorie du déterminisme, selon laquelle chaque événement a une cause et une conséquence prédéterminées."
     },
     {
         "name": "René Goscinny",
-        "buriedAtPereLachaise": false,
-        "description": "Écrivain et dessinateur de bande dessinée français, co-créateur de la série de bandes dessinées à succès 'Astérix'."
-     },
-    {
-        "name": "Honoré Daumier",
         "buriedAtPereLachaise": true,
-        "description": "Artiste et caricaturiste français connu pour ses illustrations satiriques et ses peintures de la société française du XIXe siècle."
-    },
+        "description":  "Scénariste et auteur de bande dessinée français d'origine polonaise, connu pour ses collaborations avec le dessinateur Albert Uderzo sur la série 'Astérix', ainsi que pour sa participation à d'autres œuvres célèbres comme 'Le Petit Nicolas' ou 'Lucky Luke'."
+     },
     {
         "name": "Louis Braille",
         "buriedAtPereLachaise": false,
-        "description": "Éducateur et inventeur français qui a développé le système Braille de lecture et d'écriture pour les personnes atteintes de cécité."
+        "description": "Louis Braille était un éducateur français du XIXe siècle, connu pour avoir inventé le système d'écriture tactile pour les personnes aveugles. Ce système, appelé le braille, est aujourd'hui utilisé dans le monde entier. Braille a également été un musicien accompli et a créé plusieurs œuvres pour l'orgue et le piano.",
+        "explanation": "Braille est enterré au cimetière de Coupvray, en France."
     },
     {
         "name": "Abelard",
-        "buriedAtPereLachaise": false,
-        "description": "French philosopher and theologian who was a prominent figure in the medieval scholastic movement."
+        "buriedAtPereLachaise": true,
+        "description": "Philosophe et théologien français qui a été une figure importante du mouvement scolastique médiéval."
     },
     {
         "name": "Marcel Cerdan",
         "buriedAtPereLachaise": false,
-        "description": "French boxer who was a world middleweight champion and died in a plane crash while on his way to a rematch."
-    },
-    {
-        "name": "Émile Gaboriau",
-        "buriedAtPereLachaise": true,
-        "description": "French writer and journalist known for his pioneering detective novels, such as 'Monsieur Lecoq' and 'The Widow Lerouge'."
-    },
-    {
-        "name": "Gaspard Monge",
-        "buriedAtPereLachaise": true,
-        "description": "Mathématicien et géomètre français, connu pour ses travaux en géométrie descriptive et pour être l'un des fondateurs de l'École polytechnique."
-    },
-    {
-        "name": "Antoine-Augustin Parmentier",
-        "buriedAtPereLachaise": true,
-        "description": "Agronome et nutritionniste français, connu pour avoir popularisé la culture de la pomme de terre en France et pour ses travaux sur l'alimentation et la diététique."
-    },
-    {
-        "name": "Henri Salvador",
-        "buriedAtPereLachaise": true,
-        "description": "Chanteur, compositeur et guitariste français, connu pour ses tubes comme 'Syracuse' et 'Dans mon île'."
+        "description": "Boxeur français du XXe siècle, considéré comme l'un des plus grands boxeurs français de tous les temps, connu pour avoir remporté le championnat du monde des poids moyens en 1948.",
+        "explanation": "Cerdan est enterré au cimetière du Lutétia à Casablanca, au Maroc."
     },
     {
         "name": "Jacques Brel",
         "buriedAtPereLachaise": false,
-        "description": "Chanteur, auteur-compositeur et acteur belge, connu pour ses chansons émouvantes et poétiques comme 'Ne me quitte pas' et 'Quand on n'a que l'amour'."
-    },
-    {
-        "name": "Jean de La Bruyère",
-        "buriedAtPereLachaise": true,
-        "description": "Écrivain et moraliste français, connu pour son ouvrage 'Les Caractères', qui offre une critique satirique de la société française du XVIIe siècle."
-    },
-    {
-        "name": "Fernand Braudel",
-        "buriedAtPereLachaise": true,
-        "description": "Historien français, connu pour son travail sur l'histoire économique et sociale de la Méditerranée à l'époque moderne et pour sa théorie des 'temps historiques'."
-    },
-    {
-        "name": "Serge Gainsbourg",
-        "buriedAtPereLachaise": true,
-        "description": "Chanteur, compositeur, acteur et réalisateur français, connu pour ses textes provocateurs et sa musique influencée par le jazz et le reggae."
-    },
-    {
-        "name": "Paul Verlaine",
-        "buriedAtPereLachaise": true,
-        "description": "Poète français du XIXe siècle, connu pour ses poèmes lyriques et pour être l'un des principaux représentants du mouvement symboliste."
+        "description": "Chanteur, auteur-compositeur et acteur belge, connu pour ses chansons émouvantes et poétiques comme 'Ne me quitte pas' et 'Quand on n'a que l'amour'.",
+        "explanation": "Brel est enterré au cimetière de l'île de Hiva Oa, aux îles Marquises en Polynésie française."
     },
     {
         "name": "Antoine de Saint-Exupéry",
-        "buriedAtPereLachaise": false,
-        "description": "Écrivain et aviateur français, connu pour son célèbre roman 'Le Petit Prince' et pour avoir participé à des missions de reconnaissance aérienne pendant la Seconde Guerre mondiale."
-    },
-    {
-        "name": "Pierre Corneille",
         "buriedAtPereLachaise": true,
-        "description": "Dramaturge et poète français du XVIIe siècle, connu pour ses pièces de théâtre classiques comme 'Le Cid' et 'Horace'."
-    },
-    {
-        "name": "Michel Petrucciani",
-        "buriedAtPereLachaise": true,
-        "description": "Pianiste de jazz français, connu pour sa virtuosité et son style unique, malgré son handicap physique dû à l'ostéogenèse imparfaite."
-    },
-    {
-        "name": "Eugène Scribe",
-        "buriedAtPereLachaise": true,
-        "description": "Dramaturge et librettiste français du XIXe siècle, connu pour ses nombreuses pièces de théâtre et ses collaborations avec des compositeurs d'opéra comme Meyerbeer et Rossini."
-    },
-    {
-        "name": "Georges Perec",
-        "buriedAtPereLachaise": true,
-        "description": "Écrivain français, membre du mouvement littéraire de l'Oulipo, connu pour son roman 'La Vie mode d'emploi' et pour sa fascination pour les contraintes littéraires et les jeux de mots."
-    },
-    {
-        "name": "Frédéric Bazille",
-        "buriedAtPereLachaise": false,
-        "description": "Peintre impressionniste français du XIXe siècle, connu pour ses paysages et ses scènes de genre et pour avoir été l'un des fondateurs du groupe artistique 'Les Refusés'."
-    },
-    {
-        "name": "Jean-Auguste-Dominique Ingres",
-        "buriedAtPereLachaise": true,
-        "description": "Peintre néo-classique français du XIXe siècle, connu pour ses portraits et ses nus, ainsi que pour son influence sur la peinture académique française de son époque."
-    },
-    {
-        "name": "Louis Visconti",
-        "buriedAtPereLachaise": true,
-        "description": "Architecte français du XIXe siècle, connu pour ses réalisations dans le style néo-classique, comme le Palais de justice de Paris, le théâtre de l'Odéon et le tombeau de Napoléon Ier aux Invalides."
-    },
-    {
-        "name": "Charles Fourier",
-        "buriedAtPereLachaise": true,
-        "description": "Philosophe et utopiste français du XIXe siècle, connu pour sa théorie du 'phalanstère', une communauté idéale basée sur la coopération et l'égalité, ainsi que pour ses critiques sociales et politiques de son époque."
-    },
-    {
-        "name": "Henri Bergson",
-        "buriedAtPereLachaise": true,
-        "description": "Philosophe français du XXe siècle, connu pour ses travaux sur la conscience, la perception et la durée, ainsi que pour son influence sur les mouvements philosophiques de son époque."
-    },
-    {
-        "name": "Pierre-Simon Laplace",
-        "buriedAtPereLachaise": true,
-        "description": "Mathématicien et astronome français du XVIIIe siècle, connu pour ses travaux en mécanique céleste, en probabilités et en statistiques, ainsi que pour son rôle dans la révolution scientifique de son époque."
-    },
-    {
-        "name": "René Goscinny",
-        "buriedAtPereLachaise": false,
-        "description": "Scénariste et auteur de bande dessinée français d'origine polonaise, connu pour ses collaborations avec le dessinateur Albert Uderzo sur la série 'Astérix', ainsi que pour sa participation à d'autres œuvres célèbres comme 'Le Petit Nicolas' ou 'Lucky Luke'."
+        "description": "Antoine de Saint-Exupéry (1900-1944) était un écrivain, aviateur et poète français. Il est surtout connu pour son livre Le Petit Prince, qui est devenu un classique de la littérature française. Saint-Exupéry a également été un aviateur distingué et a volé dans la guerre civile espagnole et la Seconde Guerre mondiale. Il a disparu en mission de reconnaissance au-dessus de la Méditerranée en 1944 et son corps n'a jamais été retrouvé.",
+        "explanation": "Le lieu de la mort de Saint-Exupéry est inconnu, mais il est commémoré au cimetière du Père-Lachaise à Paris, en France."
     },
     {
         "name": "Honoré Daumier",
@@ -435,24 +306,9 @@
         "description": "Peintre, sculpteur et caricaturiste français du XIXe siècle, connu pour ses dessins satiriques et politiques, ainsi que pour son engagement social et politique en faveur des travailleurs et des classes populaires de son époque."
     },
     {
-        "name": "Louis Braille",
-        "buriedAtPereLachaise": false,
-        "description": "Éducateur et inventeur français du XIXe siècle, connu pour avoir créé le système d'écriture en relief pour les personnes aveugles ou malvoyantes, connu sous le nom de 'braille'."
-    },
-    {
         "name": "André-Marie Ampère",
         "buriedAtPereLachaise": true,
         "description": "Physicien et mathématicien français du XIXe siècle, connu pour ses travaux en électromagnétisme et pour avoir introduit le concept de 'courant électrique'."
-    },
-    {
-        "name": "Abelard",
-        "buriedAtPereLachaise": false,
-        "description": "Philosophe et théologien français du XIIe siècle, connu pour ses travaux sur la logique et pour sa liaison avec Héloïse, une célèbre intellectuelle de son époque."
-    },
-    {
-        "name": "Marcel Cerdan",
-        "buriedAtPereLachaise": false,
-        "description": "Boxeur français du XXe siècle, considéré comme l'un des plus grands boxeurs français de tous les temps, connu pour avoir remporté le championnat du monde des poids moyens en 1948."
     },
     {
         "name": "Émile Gaboriau",
@@ -475,11 +331,6 @@
         "description": "Henri Salvador était un chanteur, compositeur et guitariste français d'origine guyanaise. Il a connu une longue carrière musicale et a été un précurseur du style musical de la bossa nova en France."
     },
     {
-        "name": "Jacques Brel",
-        "buriedAtPereLachaise": false,
-        "description": "Jacques Brel était un chanteur, auteur-compositeur et acteur belge. Il est considéré comme l'un des plus grands chanteurs francophones de tous les temps et a laissé un héritage musical important."
-    },
-    {
         "name": "Jean de La Bruyère",
         "buriedAtPereLachaise": true,
         "description": "Jean de La Bruyère était un écrivain et moraliste français, connu pour son livre Les Caractères. Il est considéré comme l'un des grands auteurs classiques de la littérature française."
@@ -493,16 +344,6 @@
         "name": "Serge Gainsbourg",
         "buriedAtPereLachaise": true,
         "description": "Serge Gainsbourg était un auteur-compositeur, chanteur et acteur français. Il est considéré comme l'un des artistes les plus importants de la chanson française et a influencé de nombreux autres artistes."
-    },
-    {
-        "name": "Paul Verlaine",
-        "buriedAtPereLachaise": true,
-        "description": "Paul Verlaine était un poète français, considéré comme l'un des plus grands poètes de la littérature française. Il a été associé au mouvement symboliste et a influencé de nombreux autres poètes."
-    },
-    {
-        "name": "Antoine de Saint-Exupéry",
-        "buriedAtPereLachaise": false,
-        "description": "Antoine de Saint-Exupéry était un écrivain et aviateur français, connu pour son livre Le Petit Prince. Il a également écrit plusieurs autres livres, dont Vol de nuit et Terre des hommes. "
     },
     {
         "name": "Michel Petrucciani",
@@ -542,7 +383,8 @@
     {
         "name": "Fernando Pessoa",
         "buriedAtPereLachaise": false,
-        "description": "Fernando Pessoa était un poète et écrivain portugais du XXe siècle. Il est connu pour avoir utilisé de nombreux pseudonymes, chacun ayant sa propre personnalité et sa propre voix poétique distincte."
+        "description": "Fernando Pessoa était un poète et écrivain portugais du XXe siècle. Il est connu pour avoir utilisé de nombreux pseudonymes, chacun ayant sa propre personnalité et sa propre voix poétique distincte.",
+        "explanation": "Pessoa est enterré au cimetière de Prazeres à Lisbonne, au Portugal."
     },
     {
         "name": "Guy de Maupassant",
@@ -552,17 +394,13 @@
     {
         "name": "Jean-Michel Basquiat",
         "buriedAtPereLachaise": false,
-        "description": "Jean-Michel Basquiat était un artiste américain d'origine haïtienne et portoricaine. Il est connu pour son art graffiti et ses peintures expressives, qui ont souvent abordé des questions de race, de politique et de société."
+        "description": "Jean-Michel Basquiat était un artiste américain d'origine haïtienne et portoricaine. Il est connu pour son art graffiti et ses peintures expressives, qui ont souvent abordé des questions de race, de politique et de société.",
+        "explanation": "Basquiat est enterré au cimetière de Greenwood à Brooklyn, New York, États-Unis."
     },
     {
         "name": "Allan Kardec",
         "buriedAtPereLachaise": true,
         "description": "Allan Kardec était un éducateur et écrivain français du XIXe siècle. Il est surtout connu pour être le fondateur du spiritisme, un mouvement religieux qui croit en la communication avec les esprits des morts."
-    },
-    {
-        "name": "Auguste Comte",
-        "buriedAtPereLachaise": true,
-        "description": "Auguste Comte était un philosophe français connu pour être le fondateur de la sociologie et du positivisme. Il est né en 1798 et mort en 1857."
     },
     {
         "name": "Jean Cocteau",
@@ -572,7 +410,8 @@
     {
         "name": "Jean Monnet",
         "buriedAtPereLachaise": false,
-        "description": "Jean Monnet était un homme politique français qui a joué un rôle important dans la création de l'Union européenne. Il est né en 1888 et mort en 1979."
+        "description": "Jean Monnet était un homme politique français qui a joué un rôle important dans la création de l'Union européenne. Il est né en 1888 et mort en 1979.",
+        "explanation": "Monnet est enterré au cimetière de Bazoches-sur-Guyonne, en France."
     },
     {
         "name": "Jean-Pierre Vernant",
@@ -587,7 +426,8 @@
     {
         "name": "Gilbert du Motier, Marquis de Lafayette",
         "buriedAtPereLachaise": false,
-        "description": "Gilbert du Motier, plus connu sous le nom de Marquis de Lafayette, est un personnage historique français qui a joué un rôle important dans la guerre d'indépendance américaine ainsi que dans la Révolution française. Né en 1757 et mort en 1834."
+        "description": "Gilbert du Motier, plus connu sous le nom de Marquis de Lafayette, est un personnage historique français qui a joué un rôle important dans la guerre d'indépendance américaine ainsi que dans la Révolution française. Né en 1757 et mort en 1834.",
+        "explanation": "Lafayette est enterré au cimetière de Picpus à Paris, en France."
     },
     {
         "name": "Alexandre Dumas",
@@ -607,7 +447,8 @@
     {
         "name": "Antoine Watteau",
         "buriedAtPereLachaise": false,
-        "description": "Antoine Watteau, né en 1684, était un peintre français du XVIIIe siècle. Il est considéré comme l'un des précurseurs du mouvement rococo et est connu pour ses scènes de fêtes galantes. Il est considéré comme l'un des plus grands artistes français de son époque."
+        "description": "Antoine Watteau, né en 1684, était un peintre français du XVIIIe siècle. Il est considéré comme l'un des précurseurs du mouvement rococo et est connu pour ses scènes de fêtes galantes. Il est considéré comme l'un des plus grands artistes français de son époque.",
+        "explanation": "Watteau est enterré au cimetière de Nogent-sur-Marne, en France."
     },
     {
         "name": "Antonin Artaud",
@@ -637,7 +478,8 @@
     {
         "name": "Carmen McRae",
         "buriedAtPereLachaise": false,
-        "description": "Carmen McRae était une chanteuse de jazz américaine, née en 1920 et morte en 1994. Elle est considérée comme l'une des plus grandes chanteuses de jazz de tous les temps, connue pour son phrasé unique et sa voix chaude et expressive. Son influence sur la musique perdure."
+        "description": "Carmen McRae était une chanteuse de jazz américaine, née en 1920 et morte en 1994. Elle est considérée comme l'une des plus grandes chanteuses de jazz de tous les temps, connue pour son phrasé unique et sa voix chaude et expressive. Son influence sur la musique perdure.",
+        "explanation": "McRae est enterrée au cimetière de Kensico à Valhalla, New York, États-Unis."
     },
     {
         "name": "Carlo Collodi",
@@ -647,167 +489,133 @@
     {
         "name": "Claude Monet",
         "buriedAtPereLachaise": false,
-        "description": "Claude Monet était un peintre impressionniste français, célèbre pour ses représentations des paysages, des jardins et des monuments de la France. Il a été inhumé dans la ville de Giverny, en Normandie."
+        "description": "Claude Monet était un peintre impressionniste français, célèbre pour ses représentations des paysages, des jardins et des monuments de la France. Il est considéré comme l'un des plus grands peintres français de tous les temps. Monet est mort en 1926.",
+        "explanation": "Monet est enterré au cimetière de Giverny, en France."
     },
     {
         "name": "Marie Curie",
         "buriedAtPereLachaise": false,
-        "description": "Marie Curie était une physicienne et chimiste polonaise naturalisée française, lauréate de deux prix Nobel pour ses travaux sur la radioactivité. Elle est inhumée au Panthéon à Paris, en reconnaissance de ses contributions scientifiques majeures."
+        "description": "Marie Curie était une physicienne et chimiste polonaise naturalisée française, lauréate de deux prix Nobel pour ses travaux sur la radioactivité. Elle est inhumée au Panthéon à Paris, en reconnaissance de ses contributions scientifiques majeures.",
+        "explanation": "Curie est inhumée au Panthéon à Paris, en France."
     },
     {
         "name": "Édouard Manet",
         "buriedAtPereLachaise": false,
-        "description": "Édouard Manet était un peintre français considéré comme l'un des précurseurs de l'impressionnisme. Il est inhumé au cimetière de Passy, dans le 16ème arrondissement de Paris."
+        "description": "Édouard Manet était un peintre français considéré comme l'un des précurseurs de l'impressionnisme. Il est inhumé au cimetière de Passy, dans le 16ème arrondissement de Paris.",
+        "explanation": "Edouard Manet est enterré au cimetière de Passy à Paris. Bien qu'il soit décédé à Paris en 1883, sa tombe se trouve dans ce cimetière de l'ouest de Paris, où se trouvent également les tombes d'autres personnalités célèbres telles que Claude Debussy et Marcel Renault."
     },
     {
         "name": "Gustave Eiffel",
         "buriedAtPereLachaise": false,
-        "description": "Gustave Eiffel (1832-1923) était un ingénieur et entrepreneur français connu pour la conception de la tour Eiffel à Paris. Il a également travaillé sur plusieurs autres projets de ponts, de viaducs et de structures métalliques. Eiffel a été honoré avec de nombreuses distinctions, y compris la Légion d'honneur et l'Ordre de la Couronne d'Italie."
-    },
-    {
-        "name": "Antoine de Saint-Exupéry",
-        "buriedAtPereLachaise": false,
-        "description": "Antoine de Saint-Exupéry (1900-1944) était un écrivain, aviateur et poète français. Il est surtout connu pour son livre Le Petit Prince, qui est devenu un classique de la littérature française. Saint-Exupéry a également été un aviateur distingué et a volé dans la guerre civile espagnole et la Seconde Guerre mondiale. Il a disparu en mission de reconnaissance au-dessus de la Méditerranée en 1944 et son corps n'a jamais été retrouvé."
+        "description": "Gustave Eiffel (1832-1923) était un ingénieur et entrepreneur français connu pour la conception de la tour Eiffel à Paris. Il a également travaillé sur plusieurs autres projets de ponts, de viaducs et de structures métalliques. Eiffel a été honoré avec de nombreuses distinctions, y compris la Légion d'honneur et l'Ordre de la Couronne d'Italie.",
+        "explanation": "Eiffel est enterré au cimetière de Levallois-Perret à Paris, en France."
     },
     {
         "name": "Charles Baudelaire",
         "buriedAtPereLachaise": false,
-        "description": "Charles Baudelaire (1821-1867) était un poète français qui a influencé le mouvement symboliste et le modernisme en poésie. Il est surtout connu pour son recueil de poèmes Les Fleurs du Mal, qui a été critiqué à l'époque pour sa sensualité et sa subversion des normes littéraires et morales. Baudelaire a également écrit sur l'art, la littérature et la société dans des essais tels que Le Peintre de la vie moderne."
+        "description": "Charles Baudelaire (1821-1867) était un poète français qui a influencé le mouvement symboliste et le modernisme en poésie. Il est surtout connu pour son recueil de poèmes Les Fleurs du Mal, qui a été critiqué à l'époque pour sa sensualité et sa subversion des normes littéraires et morales. Baudelaire a également écrit sur l'art, la littérature et la société dans des essais tels que Le Peintre de la vie moderne.",
+        "explanation": "Baudelaire est inhumé au cimetière du Montparnasse à Paris, en France."
     },
     {
         "name": "Emile Zola",
         "buriedAtPereLachaise": false,
-        "description": "Emile Zola était un écrivain, journaliste et critique d'art français, considéré comme l'un des plus grands écrivains du XIXe siècle. Il est surtout connu pour sa série de romans Les Rougon-Macquart, qui examine les effets sociaux et familiaux du Second Empire français sur la société."
+        "description": "Emile Zola était un écrivain, journaliste et critique d'art français, considéré comme l'un des plus grands écrivains du XIXe siècle. Il est surtout connu pour sa série de romans Les Rougon-Macquart, qui examine les effets sociaux et familiaux du Second Empire français sur la société.",
+        "explanation": "Zola est inhumé au Panthéon à Paris, en France."
     },
     {
         "name": "Franz Liszt",
         "buriedAtPereLachaise": false,
-        "description": "Franz Liszt était un compositeur, pianiste, chef d'orchestre et professeur hongrois. Il est considéré comme l'un des plus grands pianistes de tous les temps et a contribué de manière significative au développement de la musique classique dans la seconde moitié du XIXe siècle."
+        "description": "Franz Liszt était un compositeur, pianiste, chef d'orchestre et professeur hongrois. Il est considéré comme l'un des plus grands pianistes de tous les temps et a contribué de manière significative au développement de la musique classique dans la seconde moitié du XIXe siècle.",
+        "explanation": "Liszt est inhumé au cimetière de Bayreuth en Bavière, en Allemagne."
     },
     {
         "name": "Victor Hugo",
         "buriedAtPereLachaise": false,
-        "description": "Victor Hugo était un écrivain, poète et dramaturge français du XIXe siècle, considéré comme l'un des plus grands écrivains de la littérature française. Il est surtout connu pour ses romans Les Misérables et Notre-Dame de Paris, ainsi que pour son engagement politique en faveur de la démocratie et des droits de l'homme."
+        "description": "Victor Hugo était un écrivain, poète et dramaturge français du XIXe siècle, considéré comme l'un des plus grands écrivains de la littérature française. Il est surtout connu pour ses romans Les Misérables et Notre-Dame de Paris, ainsi que pour son engagement politique en faveur de la démocratie et des droits de l'homme.",
+        "explanation": "Hugo est inhumé au Panthéon à Paris, en France."
     },
     {
         "name": "Albert Einstein",
         "buriedAtPereLachaise": false,
-        "description": "Albert Einstein était un physicien théoricien allemand qui a développé la théorie de la relativité et a été lauréat du prix Nobel de physique en 1921. Il est considéré comme l'un des plus grands scientifiques de tous les temps et a contribué de manière significative à la physique théorique et à notre compréhension de l'univers."
+        "description": "Albert Einstein était un physicien théoricien allemand qui a développé la théorie de la relativité et a été lauréat du prix Nobel de physique en 1921. Il est considéré comme l'un des plus grands scientifiques de tous les temps et a contribué de manière significative à la physique théorique et à notre compréhension de l'univers.",
+        "explanation": "Albert Einstein a été incinéré et ses cendres ont été dispersées dans un lieu inconnu, conformément à ses dernières volontés."
     },
     {
         "name": "Auguste Renoir",
         "buriedAtPereLachaise": false,
-        "description": "Auguste Renoir était un peintre français impressionniste connu pour ses portraits, paysages et scènes de la vie quotidienne. Né en 1841, il a travaillé avec d'autres artistes tels que Monet et Cézanne, et a créé de nombreuses œuvres d'art célèbres, notamment Le Déjeuner des canotiers."
-    },
-    {
-        "name": "Auguste Comte",
-        "buriedAtPereLachaise": false,
-        "description": "Auguste Comte était un philosophe français né en 1798, souvent considéré comme le fondateur de la sociologie. Il a développé une théorie appelée le positivisme, qui soutenait que toutes les connaissances devaient être basées sur l'observation et la méthode scientifique."
-    },
-    {
-        "name": "Frédéric Chopin",
-        "buriedAtPereLachaise": false,
-        "description": "Frédéric Chopin était un compositeur et pianiste polonais du XIXe siècle, considéré comme l'un des plus grands musiciens de l'histoire. Il a créé de nombreuses pièces pour piano, dont les célèbres Nocturnes et Études, et a influencé de nombreux compositeurs après lui."
+        "description": "Auguste Renoir était un peintre français impressionniste connu pour ses portraits, paysages et scènes de la vie quotidienne. Né en 1841, il a travaillé avec d'autres artistes tels que Monet et Cézanne, et a créé de nombreuses œuvres d'art célèbres, notamment Le Déjeuner des canotiers.",
+        "explanation": "Auguste Renoir est décédé le 3 décembre 1919 à l'âge de 78 ans à Cagnes-sur-Mer, dans le sud de la France. Il souffrait d'arthrite et avait des difficultés à peindre en raison de sa santé déclinante. Il a été enterré au cimetière de Essoyes, dans l'Aube."
     },
     {
         "name": "Camille Claudel",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Camille Claudel était une artiste française qui a travaillé dans les domaines de la sculpture et de la peinture. Elle a étudié avec Auguste Rodin et a créé des œuvres qui ont été exposées dans des salons d'art de renom. Elle est souvent considérée comme l'une des premières femmes sculpteurs de l'histoire de l'art."
     },
     {
         "name": "Rosa Bonheur",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Rosa Bonheur était une artiste française spécialisée dans la peinture animalière du XIXe siècle. Elle est surtout connue pour son tableau Le Labourage nivernais, qui a remporté une médaille d'or à l'Exposition universelle de 1849 à Paris. Bonheur a été l'une des rares femmes artistes de son temps à avoir acquis une renommée internationale."
     },
     {
         "name": "Alfred de Musset",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Alfred de Musset était un poète, dramaturge et romancier français du XIXe siècle. Il est surtout connu pour ses pièces de théâtre, notamment Lorenzaccio, ainsi que pour ses poèmes tels que Nuit de mai et La Nuit de décembre. De Musset a été l'une des principales figures du mouvement romantique en France."
     },
     {
         "name": "Alphonse de Lamartine",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Alphonse de Lamartine était un poète, écrivain et homme politique français du XIXe siècle. Il est surtout connu pour ses poèmes lyriques tels que Le Lac et Méditations poétiques, ainsi que pour son travail en tant que diplomate et député. De Lamartine a été l'une des principales figures du mouvement romantique en France."
     },
     {
         "name": "Antoine de Rivarol",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Antoine de Rivarol était un écrivain, journaliste et philosophe français du XVIIIe siècle. Il est surtout connu pour ses essais tels que De l'universalité de la langue française et ses critiques littéraires. De Rivarol a également travaillé comme traducteur, notamment de l'anglais et de l'allemand vers le français."
     },
     {
         "name": "Aristide Briand",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Aristide Briand était un homme politique français du XIXe et XXe siècle. Il a été plusieurs fois Premier ministre de la France et a joué un rôle clé dans la création de la Société des Nations. Briand est également connu pour son engagement en faveur de la paix et a reçu le prix Nobel de la paix en 1926."
     },
     {
         "name": "Blaise Pascal",
         "buriedAtPereLachaise": false,
-        "description": "Blaise Pascal était un mathématicien, physicien, inventeur et écrivain français du XVIIe siècle. Il a développé des travaux importants en géométrie projective, en calcul des probabilités et en hydraulique. Pascal a également été un auteur important, notamment pour ses Pensées, un recueil de réflexions philosophiques sur la religion et l'existence."
+        "description": "Blaise Pascal était un mathématicien, physicien, inventeur et écrivain français du XVIIe siècle. Il a développé des travaux importants en géométrie projective, en calcul des probabilités et en hydraulique. Pascal a également été un auteur important, notamment pour ses Pensées, un recueil de réflexions philosophiques sur la religion et l'existence.",
+        "explanation": "Blaise Pascal est enterré dans l'église Saint-Étienne-du-Mont à Paris. Bien qu'il soit décédé à Port-Royal-des-Champs en 1662, son corps a été transféré à Paris et inhumé dans cette église où se trouve également sa tombe."
     },
     {
         "name": "Charles Fourier",
         "buriedAtPereLachaise": false,
-        "description": "Charles Fourier était un philosophe et théoricien social français du XIXe siècle. Il a développé une théorie appelée le socialisme utopique, qui proposait une organisation sociale basée sur la coopération et l'harmonie plutôt que sur la concurrence et la compétition. Fourier est également connu pour avoir développé le concept de phalanstère, une communauté utopique qui serait autonome et autosuffisante."
+        "description": "Charles Fourier était un philosophe et théoricien social français du XIXe siècle. Il a développé une théorie appelée le socialisme utopique, qui proposait une organisation sociale basée sur la coopération et l'harmonie plutôt que sur la concurrence et la compétition. Fourier est également connu pour avoir développé le concept de phalanstère, une communauté utopique qui serait autonome et autosuffisante.",
+        "explanation": "Charles Fourier est inhumé au cimetière de Montmartre à Paris. Bien qu'il soit décédé en 1837, sa tombe n'a été placée au cimetière de Montmartre que plus tard, en 1889, grâce à une initiative de la ville de Paris et de ses admirateurs."
     },
     {
         "name": "Charles Nicolle",
         "buriedAtPereLachaise": false,
-        "description": "Charles Nicolle était un médecin et biologiste français du XIXe et XXe siècle. Il est surtout connu pour ses travaux sur la fièvre récurrente et la transmission des maladies infectieuses par les insectes, ainsi que pour son rôle dans la création de l'Institut Pasteur en Tunisie. Nicolle a reçu le prix Nobel de physiologie ou médecine en 1928 pour ses travaux sur la fièvre récurrente."
+        "description": "Charles Nicolle était un médecin et biologiste français du XIXe et XXe siècle. Il est surtout connu pour ses travaux sur la fièvre récurrente et la transmission des maladies infectieuses par les insectes, ainsi que pour son rôle dans la création de l'Institut Pasteur en Tunisie. Nicolle a reçu le prix Nobel de physiologie ou médecine en 1928 pour ses travaux sur la fièvre récurrente.",
+        "explanation": "Charles Nicolle est enterré au cimetière du Montparnasse à Paris. Il est mort à Tunis en 1936, où il était directeur de l'Institut Pasteur, mais son corps a été rapatrié à Paris et inhumé dans ce cimetière."
     },
     {
         "name": "Claude Debussy",
         "buriedAtPereLachaise": false,
-        "description": "Claude Debussy était un compositeur français du XIXe et XXe siècle, considéré comme l'un des plus importants de la musique impressionniste. Il a créé de nombreuses œuvres célèbres, dont La Mer, Nocturnes et Clair de Lune. Debussy a également été un pionnier de la musique moderne et a influencé de nombreux compositeurs après lui."
-    },
-    {
-        "name": "Dominique Ingres",
-        "buriedAtPereLachaise": false,
-        "description": "Jean-Auguste-Dominique Ingres était un peintre français du XIXe siècle, connu pour ses portraits et ses peintures historiques. Il a été l'un des principaux représentants du mouvement néoclassique en France. Ses œuvres célèbres comprennent La Grande Odalisque, La Source et Le Bain turc."
+        "description": "Claude Debussy était un compositeur français du XIXe et XXe siècle, considéré comme l'un des plus importants de la musique impressionniste. Il a créé de nombreuses œuvres célèbres, dont La Mer, Nocturnes et Clair de Lune. Debussy a également été un pionnier de la musique moderne et a influencé de nombreux compositeurs après lui.",
+        "explanation": "Claude Debussy est enterré au cimetière de Passy à Paris. Bien qu'il soit décédé à Paris en 1918, sa tombe se trouve dans ce cimetière de l'ouest de Paris, qui abrite également les tombes d'autres personnalités célèbres telles que Marcel Proust et Jean-Luc Lagardère."
     },
     {
         "name": "Edgar Degas",
         "buriedAtPereLachaise": false,
-        "description": "Edgar Degas était un peintre français du XIXe siècle, connu pour ses représentations de la danse et de la vie quotidienne parisienne. Il a été l'un des principaux représentants du mouvement impressionniste en France. Ses œuvres célèbres comprennent Les Danseuses, La Classe de danse et Les Repasseuses."
+        "description": "Edgar Degas était un peintre français du XIXe siècle, connu pour ses représentations de la danse et de la vie quotidienne parisienne. Il a été l'un des principaux représentants du mouvement impressionniste en France. Ses œuvres célèbres comprennent Les Danseuses, La Classe de danse et Les Repasseuses.",
+        "explanation": "Edgar Degas est enterré au cimetière de Montmartre à Paris. Bien qu'il soit décédé à Paris en 1917, sa tombe se trouve dans ce cimetière situé dans le nord de Paris."
     },
     {
         "name": "Edouard Branly",
-        "buriedAtPereLachaise": false,
+        "buriedAtPereLachaise": true,
         "description": "Edouard Branly était un physicien et inventeur français du XIXe et XXe siècle. Il a développé un dispositif appelé le coherer, qui a été utilisé pour détecter les signaux radio. Branly a également travaillé dans le domaine de la télégraphie sans fil et a été l'un des premiers scientifiques à étudier les effets des radiations sur la santé humaine."
     },
     {
         "name": "Edouard Herriot",
         "buriedAtPereLachaise": false,
-        "description": "Edouard Herriot était un homme politique français du XXe siècle. Il a été plusieurs fois maire de Lyon et a également été député et président de l'Assemblée nationale française. Herriot a été l'un des principaux représentants du Parti radical français et a défendu des politiques sociales et économiques progressistes."
-    },
-    {
-        "name": "Edouard Manet",
-        "buriedAtPereLachaise": false,
-        "description": "Edouard Manet était un peintre français du XIXe siècle, considéré comme l'un des principaux représentants du mouvement impressionniste en France. Il a créé de nombreuses œuvres célèbres, dont Le Déjeuner sur l'herbe et Olympia, qui ont été controversées à l'époque pour leur sujet et leur style. Manet a également été un pionnier de la modernité en art."
-    },
-    {
-        "name": "Eugène Delacroix",
-        "buriedAtPereLachaise": false,
-        "description": "Eugène Delacroix était un peintre français du XIXe siècle, connu pour ses peintures historiques et romantiques. Il a été l'un des principaux représentants du mouvement romantique en France. Ses œuvres célèbres comprennent La Liberté guidant le peuple et Les Massacres de Scio."
-    },
-    {
-        "name": "François-René de Chateaubriand",
-        "buriedAtPereLachaise": false,
-        "description": "François-René de Chateaubriand était un écrivain et homme politique français du XVIIIe et XIXe siècle. Il est surtout connu pour ses œuvres littéraires, notamment Les Mémoires d'outre-tombe et Atala. Chateaubriand a également été ministre des Affaires étrangères et ambassadeur de France au Royaume-Uni."
-    },
-    {
-        "name": "Edouard Herriot",
-        "buriedAtPereLachaise": false,
-        "description": "Edouard Herriot était un homme politique français du XXe siècle. Il a été plusieurs fois maire de Lyon et a également été député et président de l'Assemblée nationale française. Herriot a été l'un des principaux représentants du Parti radical français et a défendu des politiques sociales et économiques progressistes."
-    },
-    {
-        "name": "Edouard Manet",
-        "buriedAtPereLachaise": false,
-        "description": "Edouard Manet était un peintre français du XIXe siècle, considéré comme l'un des principaux représentants du mouvement impressionniste en France. Il a créé de nombreuses œuvres célèbres, dont Le Déjeuner sur l'herbe et Olympia, qui ont été controversées à l'époque pour leur sujet et leur style. Manet a également été un pionnier de la modernité en art."
-    },
-    {
-        "name": "Eugène Delacroix",
-        "buriedAtPereLachaise": false,
-        "description": "Eugène Delacroix était un peintre français du XIXe siècle, connu pour ses peintures historiques et romantiques. Il a été l'un des principaux représentants du mouvement romantique en France. Ses œuvres célèbres comprennent La Liberté guidant le peuple et Les Massacres de Scio."
+        "description": "Edouard Herriot était un homme politique français du XXe siècle. Il a été plusieurs fois maire de Lyon et a également été député et président de l'Assemblée nationale française. Herriot a été l'un des principaux représentants du Parti radical français et a défendu des politiques sociales et économiques progressistes.",
+        "explanation": "Edouard Herriot est enterré au cimetière de Loyasse à Lyon, sa ville natale. Il est décédé en 1957 à Saint-Genis-Laval, près de Lyon, où il avait vécu après sa retraite de la vie politique. Cependant, selon ses souhaits, il a été inhumé dans le cimetière de Loyasse à Lyon, où se trouvent également les tombes d'autres personnalités lyonnaises célèbres."
     },
     {
         "name": "François-René de Chateaubriand",
@@ -854,11 +662,6 @@
         "buriedAtPerelachaise": false,
         "description": "Le Corbusier était un architecte et designer suisse du XXe siècle, considéré comme l'un des principaux représentants du mouvement moderne en architecture. Il a créé de nombreux bâtiments célèbres, tels que la Villa Savoye, le Pavillon de l'Esprit Nouveau et la Chapelle Notre-Dame-du-Haut. Le Corbusier a également été un pionnier de l'urbanisme et du design d'intérieur."
     },
-    {
-        "name": "Louis Braille",
-        "buriedAtPereLachaise": false,
-        "description": "Louis Braille était un éducateur français du XIXe siècle, connu pour avoir inventé le système d'écriture tactile pour les personnes aveugles. Ce système, appelé le braille, est aujourd'hui utilisé dans le monde entier. Braille a également été un musicien accompli et a créé plusieurs œuvres pour l'orgue et le piano."
-      },
       {
         "name": "Louis Lumière",
         "buriedAtPereLachaise": false,

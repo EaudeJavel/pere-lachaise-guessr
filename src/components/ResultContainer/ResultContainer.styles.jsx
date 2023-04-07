@@ -7,18 +7,30 @@ export const ResultContainerStyled = styled.div`
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 export const ResultText = styled.p`
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 `;
 
 export const ButtonStyled = styled(Button)`
@@ -48,5 +60,9 @@ export const ButtonStyled = styled(Button)`
     width: 50px;
     height: 50px;
     transition: width 0.1s ease-out, height 0.1s ease-out;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
   }
 `;
