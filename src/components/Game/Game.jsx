@@ -30,7 +30,7 @@ const Game = ({ mode, resetGameMode }) => {
     return savedHighestScore;
   });
   const [countdownId, setCountdownId] = useState(null);
-  const [timer, setTimer] = useState(3);
+  const [timer, setTimer] = useState(60);
   const [isGameFinished, setisGameFinished] = useState(false);
 
   const handleAnswer = (answer) => {
