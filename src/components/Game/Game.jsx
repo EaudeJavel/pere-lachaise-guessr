@@ -161,6 +161,7 @@ const Game = ({ mode, resetGameMode }) => {
     ) : (
       <GameOverContainer>
       <GameOverHeading>Pas mal !</GameOverHeading>
+      <ScoreDisplay>Score: {score}</ScoreDisplay>
       <Flex>
         <Button onClick={handleReset}>Rejouer</Button>
         <Button onClick={resetGameMode}>
