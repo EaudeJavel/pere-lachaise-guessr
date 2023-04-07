@@ -182,7 +182,7 @@ const Game = ({ mode, resetGameMode }) => {
       {showResult && (
         <>
           <ScoreboardButton onClick={handleScoreboardClick} />
-          {showTwitterBtn && <TweetButton score={score} />}
+          {showTwitterBtn && <TweetButton score={score} attempts={attempts} />}
         </>
       )}
     </>

@@ -17,8 +17,8 @@ const TwitterButton = styled.a`
   }
 `;
 
-const TweetButton = ({ score }) => {
-  const tweetText = `My score on Père Lachaise Guessr is ${score} out of 196! Can you beat me? #PereLachaiseGuessr`;
+const TweetButton = ({ score, attempts }) => {
+  const tweetText = `My score on Père Lachaise Guessr is ${score} out of ${attempts} Can you beat me? #PereLachaiseGuessr`;
 
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
