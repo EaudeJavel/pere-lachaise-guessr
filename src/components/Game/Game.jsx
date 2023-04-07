@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { GameOverContainer, GameOverHeading, Flex } from "./Game.styles"
+import {
+  GameOverContainer,
+  GameOverHeading,
+  Flex,
+  ScoreDisplay,
+} from "./Game.styles";
 import personalities from "../../data/personalities.json";
 import Ladderboard from "../Ladderboard/Ladderboard";
 import TweetButton from "../TweetButton/TweetButton";
@@ -139,51 +144,49 @@ const Game = ({ mode, resetGameMode }) => {
 
   return (
     <>
-    {!isGameFinished ? (
-      !showResult ? (
-        <QuestionContainer
-          personality={personality}
-          handleAnswer={handleAnswer}
-          timer={timer}
-          mode={mode}
-        />
+      {!isGameFinished ? (
+        !showResult ? (
+          <QuestionContainer
+            personality={personality}
+            handleAnswer={handleAnswer}
+            timer={timer}
+            mode={mode}
+          />
+        ) : (
+          <ResultContainer
+            isCorrect={isCorrect}
+            personality={personality}
+            score={score}
+            attempts={attempts}
+            handleNextQuestion={handleNextQuestion}
+            handleReset={handleReset}
+            isGameFinished={isGameFinished}
+          />
+        )
       ) : (
-        <ResultContainer
-          isCorrect={isCorrect}
-          personality={personality}
-          score={score}
-          attempts={attempts}
-          handleNextQuestion={handleNextQuestion}
-          handleReset={handleReset}
-          isGameFinished={isGameFinished}
+        <GameOverContainer>
+          <GameOverHeading>Pas mal !</GameOverHeading>
+          <ScoreDisplay>Score: {score}</ScoreDisplay>
+          <Flex>
+            <Button onClick={handleReset}>Rejouer</Button>
+            <Button onClick={resetGameMode}>Retour au menu</Button>
+          </Flex>
+        </GameOverContainer>
+      )}
+      {showScoreboard && (
+        <Ladderboard
+          highestScore={highestScore}
+          handleClose={() => setShowScoreboard(false)}
         />
-      )
-    ) : (
-      <GameOverContainer>
-      <GameOverHeading>Pas mal !</GameOverHeading>
-      <ScoreDisplay>Score: {score}</ScoreDisplay>
-      <Flex>
-        <Button onClick={handleReset}>Rejouer</Button>
-        <Button onClick={resetGameMode}>
-          Retour au menu
-        </Button>
-      </Flex>
-    </GameOverContainer>
-    )}
-    {showScoreboard && (
-      <Ladderboard
-        highestScore={highestScore}
-        handleClose={() => setShowScoreboard(false)}
-      />
-    )}
-    {showResult && (
-      <>
-        <ScoreboardButton onClick={handleScoreboardClick} />
-        {showTwitterBtn && <TweetButton score={score} />}
-      </>
-    )}
-  </>
+      )}
+      {showResult && (
+        <>
+          <ScoreboardButton onClick={handleScoreboardClick} />
+          {showTwitterBtn && <TweetButton score={score} />}
+        </>
+      )}
+    </>
   );
-}
+};
 
 export default Game;

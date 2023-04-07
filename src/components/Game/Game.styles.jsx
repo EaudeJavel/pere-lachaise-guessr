@@ -17,3 +17,9 @@ export const GameOverHeading = styled.h2`
 export const Flex = styled.div`
     display: flex;
 `
+
+export const ScoreDisplay = styled.p`
+  font-size: 24px;
+  color: #ffffff;
+  margin: 16px 0;
+`;
