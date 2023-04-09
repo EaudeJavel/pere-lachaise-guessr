@@ -1,6 +1,6 @@
 # Père Lachaise Guessr
 
-## 1.0.1
+[![Version](https://img.shields.io/github/package-json/v/eaudejavel/pere-lachaise-guessr)](https://raclette.space)
 
 Père Lachaise Guessr is an engaging web-based game that challenges players to determine whether a famous individual is buried at the renowned Père Lachaise cemetery in Paris. This entertaining game tests your knowledge of history and culture while introducing you to some of the world's most celebrated personalities.
 
